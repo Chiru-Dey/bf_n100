@@ -6,11 +6,5 @@ __pycache__/
 .ruff_cache/
 htmlcov/
 coverage.xml
-data/nifty100.db
-output/
-reports/tearsheets/
-reports/sector/
-reports/portfolio/
-reports/radar_charts/
-reports/pytest_report.html
+
 .ipynb_checkpoints/

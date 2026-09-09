@@ -1,16 +1,16 @@
 .PHONY: load ratios test report dashboard api clean
 
 load:
-	uv run python src/etl/loader.py
+	uv run python -m src.etl.loader
 
 ratios:
-	uv run python src/analytics/ratios.py
+	uv run python -m src.analytics.ratios
 
 test:
 	uv run pytest tests --html=reports/pytest_report.html --self-contained-html
 
 report:
-	uv run python src/reports/generate_all.py
+	uv run python -m src.reports.generate_all
 
 dashboard:
 	uv run streamlit run src/dashboard/app.py
