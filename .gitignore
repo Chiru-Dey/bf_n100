@@ -1,10 +1,16 @@
-# Python-generated files
+.venv/
+.env
 __pycache__/
-*.py[oc]
-build/
-dist/
-wheels/
-*.egg-info
-
-# Virtual environments
-.venv
+*.pyc
+.pytest_cache/
+.ruff_cache/
+htmlcov/
+coverage.xml
+data/nifty100.db
+output/
+reports/tearsheets/
+reports/sector/
+reports/portfolio/
+reports/radar_charts/
+reports/pytest_report.html
+.ipynb_checkpoints/
