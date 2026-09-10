@@ -1,5 +1,23 @@
 from src.etl.normaliser import normalize_ticker, normalize_year
+from src.etl.normaliser import repair_pl_column_rotation
+import pandas as pd
+import pytest
 
+def _pl_row(**overrides: float) -> pd.DataFrame:
+    row = {
+        "company_id": "CIPLA",
+        "year": "2024-03",
+        "sales": 25774.0,
+        "expenses": 90.0,
+        "operating_profit": 19483.0,
+        "opm_percentage": 6291.0,
+        "other_income": 24.0,
+        "interest": 552.0,
+        "depreciation": 1051.0,
+        "profit_before_tax": 5702.0,
+    }
+    row.update(overrides)
+    return pd.DataFrame([row])
 
 class TestNormalizeYear:
     def test_year_mar23(self) -> None:
@@ -108,3 +126,63 @@ class TestNormalizeTicker:
 
     def test_ticker_nan(self) -> None:
         assert normalize_ticker(float("nan")) == "MISSING"
+    
+    def _pl_row(**overrides: float) -> pd.DataFrame:
+        row = {
+            "company_id": "CIPLA",
+            "year": "2024-03",
+            "sales": 25774.0,
+            "expenses": 90.0,
+            "operating_profit": 19483.0,
+            "opm_percentage": 6291.0,
+            "other_income": 24.0,
+            "interest": 552.0,
+            "depreciation": 1051.0,
+            "profit_before_tax": 5702.0,
+        }
+        row.update(overrides)
+        return pd.DataFrame([row])
+
+
+    def test_repair_pl_column_rotation_rotated_row(self) -> None:
+        repaired = repair_pl_column_rotation(_pl_row())
+        assert repaired.loc[0, "expenses"] == pytest.approx(19483.0)
+        assert repaired.loc[0, "operating_profit"] == pytest.approx(6291.0)
+        assert repaired.loc[0, "opm_percentage"] == pytest.approx(24.41, abs=0.01)
+        assert repaired.loc[0, "other_income"] == pytest.approx(552.0)
+        assert repaired.loc[0, "interest"] == pytest.approx(1051.0)
+        assert repaired.loc[0, "depreciation"] == pytest.approx(90.0)
+
+
+
+    def test_repair_pl_column_rotation_clean_row_unchanged(self) -> None:
+        frame = _pl_row(
+            expenses=19483.0,
+            operating_profit=6291.0,
+            opm_percentage=24.41,
+            other_income=552.0,
+            interest=90.0,
+            depreciation=1051.0,
+        )
+        pd.testing.assert_frame_equal(repair_pl_column_rotation(frame), frame)
+
+
+
+    def test_repair_pl_column_rotation_bank_row_unchanged(self) -> None:
+        frame = pd.DataFrame(
+            [
+                {
+                    "company_id": "AXISBANK",
+                    "year": "2024-03",
+                    "sales": 109369.0,
+                    "expenses": 59474.0,
+                    "operating_profit": 37943.0,
+                    "opm_percentage": 11952.0,
+                    "other_income": 11.0,
+                    "interest": 22442.0,
+                    "depreciation": 1334.0,
+                    "profit_before_tax": 33060.0,
+                }
+            ]
+        )
+        pd.testing.assert_frame_equal(repair_pl_column_rotation(frame), frame)

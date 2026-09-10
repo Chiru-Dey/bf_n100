@@ -2,6 +2,10 @@ from __future__ import annotations
 
 import math
 import re
+import logging
+import pandas as pd
+
+logger = logging.getLogger(__name__)
 
 PARSE_ERROR = "PARSE_ERROR"
 MISSING = "MISSING"
@@ -100,3 +104,57 @@ def normalize_ticker(value: object) -> str:
         return MISSING
     text = str(value).strip().upper()
     return text if text else MISSING
+
+PL_ROTATION_COLUMNS = (
+    "expenses",
+    "operating_profit",
+    "opm_percentage",
+    "other_income",
+    "interest",
+    "depreciation",
+)
+
+
+def repair_pl_column_rotation(frame: pd.DataFrame) -> pd.DataFrame:
+    """Restore rotated P&L middle-block columns detected via PBT identity checks."""
+    repaired = frame.copy()
+    sales = repaired["sales"]
+    expenses = repaired["expenses"]
+    operating_profit = repaired["operating_profit"]
+    opm_percentage = repaired["opm_percentage"]
+    interest = repaired["interest"]
+    depreciation = repaired["depreciation"]
+    pbt = repaired["profit_before_tax"]
+    broken_core = (sales - expenses - operating_profit).abs() > 0.01 * sales.abs()
+    op_holds_expenses = (operating_profit - (sales - opm_percentage)).abs() <= (
+        0.01 * sales.abs()
+    )
+    rotated_pbt = opm_percentage + interest - depreciation - expenses
+    pbt_matches = (pbt - rotated_pbt).abs() <= 0.01 * pbt.abs().clip(lower=1.0)
+    required = ["sales", "profit_before_tax", *PL_ROTATION_COLUMNS]
+    mask = (
+        broken_core
+        & op_holds_expenses
+        & pbt_matches
+        & repaired[required].notna().all(axis=1)
+    )
+    if not mask.any():
+        return repaired
+    repaired.loc[mask, "expenses"] = operating_profit[mask]
+    repaired.loc[mask, "operating_profit"] = opm_percentage[mask]
+    repaired.loc[mask, "opm_percentage"] = (
+        repaired.loc[mask, "operating_profit"]
+        / repaired.loc[mask, "sales"]
+        * 100.0
+    ).round(2)
+    repaired.loc[mask, "other_income"] = interest[mask]
+    repaired.loc[mask, "interest"] = depreciation[mask]
+    repaired.loc[mask, "depreciation"] = expenses[mask]
+    for company_id, year in repaired.loc[mask, ["company_id", "year"]].itertuples(
+        index=False
+    ):
+        logger.debug("Repaired rotated P&L columns for %s %s", company_id, year)
+    logger.warning(
+        "Repaired rotated P&L column block for %d of %d rows", mask.sum(), len(repaired)
+    )
+    return repaired

@@ -1,0 +1,381 @@
+Nifty 100 ratio engine edge case log - generated 2026-09-10T08:51:16
+
+[1] RETURN CROSS-CHECK ANOMALIES - 2
+SIEMENS 2024-09 return_on_capital_employed_pct: computed=17.74 source=25.6 diff=7.86 category=version difference
+PNB 2024-03 return_on_equity_pct: computed=61.32 source=8.7 diff=52.62 category=formula discrepancy
+
+[2] CAGR SIGN EDGE CASES - 330
+ADANIENSOL 2017-03 revenue_cagr_3yr: flag=ZERO_BASE category=handled edge case
+ADANIENSOL 2017-03 pat_cagr_3yr: flag=ZERO_BASE category=handled edge case
+ADANIENSOL 2018-03 pat_cagr_3yr: flag=TURNAROUND category=handled edge case
+ADANIGREEN 2020-03 pat_cagr_3yr: flag=BOTH_NEGATIVE category=handled edge case
+ADANIGREEN 2021-03 pat_cagr_3yr: flag=TURNAROUND category=handled edge case
+ADANIGREEN 2022-03 pat_cagr_3yr: flag=TURNAROUND category=handled edge case
+ADANIGREEN 2023-03 pat_cagr_3yr: flag=TURNAROUND category=handled edge case
+ADANIPOWER 2016-03 pat_cagr_3yr: flag=TURNAROUND category=handled edge case
+ADANIPOWER 2017-03 pat_cagr_3yr: flag=BOTH_NEGATIVE category=handled edge case
+ADANIPOWER 2018-03 pat_cagr_3yr: flag=BOTH_NEGATIVE category=handled edge case
+ADANIPOWER 2019-03 pat_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+ADANIPOWER 2020-03 pat_cagr_3yr: flag=BOTH_NEGATIVE category=handled edge case
+ADANIPOWER 2021-03 pat_cagr_3yr: flag=TURNAROUND category=handled edge case
+ADANIPOWER 2022-03 pat_cagr_3yr: flag=TURNAROUND category=handled edge case
+ADANIPOWER 2023-03 pat_cagr_3yr: flag=TURNAROUND category=handled edge case
+BANKBARODA 2016-03 pat_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+BANKBARODA 2018-03 pat_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+BANKBARODA 2019-03 pat_cagr_3yr: flag=TURNAROUND category=handled edge case
+BANKBARODA 2021-03 pat_cagr_3yr: flag=TURNAROUND category=handled edge case
+BHARTIARTL 2020-03 pat_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+BHARTIARTL 2021-03 pat_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+BHARTIARTL 2023-03 pat_cagr_3yr: flag=TURNAROUND category=handled edge case
+BHARTIARTL 2024-03 pat_cagr_3yr: flag=TURNAROUND category=handled edge case
+BHEL 2016-03 pat_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+BHEL 2019-03 pat_cagr_3yr: flag=TURNAROUND category=handled edge case
+BHEL 2020-03 pat_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+BHEL 2021-03 pat_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+BHEL 2023-03 pat_cagr_3yr: flag=TURNAROUND category=handled edge case
+BHEL 2024-03 pat_cagr_3yr: flag=TURNAROUND category=handled edge case
+CANBK 2016-03 pat_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+CANBK 2018-03 pat_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+CANBK 2019-03 pat_cagr_3yr: flag=TURNAROUND category=handled edge case
+CANBK 2020-03 pat_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+CANBK 2021-03 pat_cagr_3yr: flag=TURNAROUND category=handled edge case
+CANBK 2023-03 pat_cagr_3yr: flag=TURNAROUND category=handled edge case
+DLF 2020-03 pat_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+DLF 2023-03 pat_cagr_3yr: flag=TURNAROUND category=handled edge case
+GODREJCP 2024-03 pat_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+HINDALCO 2016-03 pat_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+HINDALCO 2019-03 pat_cagr_3yr: flag=TURNAROUND category=handled edge case
+INDIGO 2020-03 pat_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+INDIGO 2021-03 pat_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+INDIGO 2022-03 pat_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+INDIGO 2023-03 pat_cagr_3yr: flag=BOTH_NEGATIVE category=handled edge case
+INDIGO 2024-03 pat_cagr_3yr: flag=TURNAROUND category=handled edge case
+IOC 2020-03 pat_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+IOC 2023-03 pat_cagr_3yr: flag=TURNAROUND category=handled edge case
+JINDALSTEL 2016-03 pat_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+JINDALSTEL 2017-03 pat_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+JINDALSTEL 2018-03 pat_cagr_3yr: flag=BOTH_NEGATIVE category=handled edge case
+JINDALSTEL 2019-03 pat_cagr_3yr: flag=BOTH_NEGATIVE category=handled edge case
+JINDALSTEL 2020-03 pat_cagr_3yr: flag=BOTH_NEGATIVE category=handled edge case
+JINDALSTEL 2021-03 pat_cagr_3yr: flag=TURNAROUND category=handled edge case
+JINDALSTEL 2022-03 pat_cagr_3yr: flag=TURNAROUND category=handled edge case
+JINDALSTEL 2023-03 pat_cagr_3yr: flag=TURNAROUND category=handled edge case
+JSWSTEEL 2016-03 pat_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+JSWSTEEL 2019-03 pat_cagr_3yr: flag=TURNAROUND category=handled edge case
+M&M 2020-03 pat_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+M&M 2023-03 pat_cagr_3yr: flag=TURNAROUND category=handled edge case
+NAUKRI 2017-03 pat_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+NAUKRI 2018-03 pat_cagr_3yr: flag=TURNAROUND category=handled edge case
+NAUKRI 2020-03 pat_cagr_3yr: flag=BOTH_NEGATIVE category=handled edge case
+NAUKRI 2023-03 pat_cagr_3yr: flag=BOTH_NEGATIVE category=handled edge case
+PNB 2016-03 pat_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+PNB 2018-03 pat_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+PNB 2019-03 pat_cagr_3yr: flag=BOTH_NEGATIVE category=handled edge case
+PNB 2021-03 pat_cagr_3yr: flag=TURNAROUND category=handled edge case
+PNB 2022-03 pat_cagr_3yr: flag=TURNAROUND category=handled edge case
+SBIN 2017-03 pat_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+SBIN 2018-03 pat_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+SBIN 2020-03 pat_cagr_3yr: flag=TURNAROUND category=handled edge case
+SBIN 2021-03 pat_cagr_3yr: flag=TURNAROUND category=handled edge case
+TATACONSUM 2016-03 pat_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+TATACONSUM 2019-03 pat_cagr_3yr: flag=TURNAROUND category=handled edge case
+TATAMOTORS 2019-03 pat_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+TATAMOTORS 2020-03 pat_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+TATAMOTORS 2021-03 pat_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+TATAMOTORS 2022-03 pat_cagr_3yr: flag=BOTH_NEGATIVE category=handled edge case
+TATAMOTORS 2023-03 pat_cagr_3yr: flag=TURNAROUND category=handled edge case
+TATAMOTORS 2024-03 pat_cagr_3yr: flag=TURNAROUND category=handled edge case
+TATASTEEL 2016-03 pat_cagr_3yr: flag=BOTH_NEGATIVE category=handled edge case
+TATASTEEL 2017-03 pat_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+TATASTEEL 2018-03 pat_cagr_3yr: flag=TURNAROUND category=handled edge case
+TATASTEEL 2019-03 pat_cagr_3yr: flag=TURNAROUND category=handled edge case
+TATASTEEL 2020-03 pat_cagr_3yr: flag=TURNAROUND category=handled edge case
+TATASTEEL 2024-03 pat_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+TRENT 2016-03 pat_cagr_3yr: flag=TURNAROUND category=handled edge case
+TRENT 2017-03 pat_cagr_3yr: flag=TURNAROUND category=handled edge case
+TRENT 2021-03 pat_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+TRENT 2024-03 pat_cagr_3yr: flag=TURNAROUND category=handled edge case
+ADANIENSOL 2017-03 eps_cagr_3yr: flag=ZERO_BASE category=handled edge case
+ADANIENSOL 2018-03 eps_cagr_3yr: flag=ZERO_BASE category=handled edge case
+ADANIGREEN 2020-03 eps_cagr_3yr: flag=ZERO_BASE category=handled edge case
+ADANIGREEN 2021-03 eps_cagr_3yr: flag=TURNAROUND category=handled edge case
+ADANIGREEN 2022-03 eps_cagr_3yr: flag=TURNAROUND category=handled edge case
+ADANIGREEN 2023-03 eps_cagr_3yr: flag=ZERO_BASE category=handled edge case
+ADANIPOWER 2016-03 eps_cagr_3yr: flag=TURNAROUND category=handled edge case
+ADANIPOWER 2017-03 eps_cagr_3yr: flag=BOTH_NEGATIVE category=handled edge case
+ADANIPOWER 2018-03 eps_cagr_3yr: flag=BOTH_NEGATIVE category=handled edge case
+ADANIPOWER 2019-03 eps_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+ADANIPOWER 2020-03 eps_cagr_3yr: flag=BOTH_NEGATIVE category=handled edge case
+ADANIPOWER 2021-03 eps_cagr_3yr: flag=TURNAROUND category=handled edge case
+ADANIPOWER 2022-03 eps_cagr_3yr: flag=TURNAROUND category=handled edge case
+ADANIPOWER 2023-03 eps_cagr_3yr: flag=TURNAROUND category=handled edge case
+BANKBARODA 2016-03 eps_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+BANKBARODA 2018-03 eps_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+BANKBARODA 2019-03 eps_cagr_3yr: flag=TURNAROUND category=handled edge case
+BANKBARODA 2021-03 eps_cagr_3yr: flag=TURNAROUND category=handled edge case
+BHARTIARTL 2020-03 eps_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+BHARTIARTL 2021-03 eps_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+BHARTIARTL 2023-03 eps_cagr_3yr: flag=TURNAROUND category=handled edge case
+BHARTIARTL 2024-03 eps_cagr_3yr: flag=TURNAROUND category=handled edge case
+BHEL 2016-03 eps_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+BHEL 2019-03 eps_cagr_3yr: flag=TURNAROUND category=handled edge case
+BHEL 2020-03 eps_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+BHEL 2021-03 eps_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+BHEL 2023-03 eps_cagr_3yr: flag=TURNAROUND category=handled edge case
+BHEL 2024-03 eps_cagr_3yr: flag=TURNAROUND category=handled edge case
+CANBK 2016-03 eps_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+CANBK 2018-03 eps_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+CANBK 2019-03 eps_cagr_3yr: flag=TURNAROUND category=handled edge case
+CANBK 2020-03 eps_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+CANBK 2021-03 eps_cagr_3yr: flag=TURNAROUND category=handled edge case
+CANBK 2023-03 eps_cagr_3yr: flag=TURNAROUND category=handled edge case
+DLF 2020-03 eps_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+DLF 2023-03 eps_cagr_3yr: flag=TURNAROUND category=handled edge case
+GODREJCP 2024-03 eps_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+HINDALCO 2016-03 eps_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+HINDALCO 2019-03 eps_cagr_3yr: flag=TURNAROUND category=handled edge case
+INDIGO 2020-03 eps_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+INDIGO 2021-03 eps_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+INDIGO 2022-03 eps_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+INDIGO 2023-03 eps_cagr_3yr: flag=BOTH_NEGATIVE category=handled edge case
+INDIGO 2024-03 eps_cagr_3yr: flag=TURNAROUND category=handled edge case
+IOC 2020-03 eps_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+IOC 2023-03 eps_cagr_3yr: flag=TURNAROUND category=handled edge case
+JINDALSTEL 2016-03 eps_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+JINDALSTEL 2017-03 eps_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+JINDALSTEL 2018-03 eps_cagr_3yr: flag=BOTH_NEGATIVE category=handled edge case
+JINDALSTEL 2019-03 eps_cagr_3yr: flag=BOTH_NEGATIVE category=handled edge case
+JINDALSTEL 2020-03 eps_cagr_3yr: flag=BOTH_NEGATIVE category=handled edge case
+JINDALSTEL 2021-03 eps_cagr_3yr: flag=TURNAROUND category=handled edge case
+JINDALSTEL 2022-03 eps_cagr_3yr: flag=TURNAROUND category=handled edge case
+JINDALSTEL 2023-03 eps_cagr_3yr: flag=TURNAROUND category=handled edge case
+JSWENERGY 2021-03 eps_cagr_3yr: flag=ZERO_BASE category=handled edge case
+JSWSTEEL 2016-03 eps_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+JSWSTEEL 2019-03 eps_cagr_3yr: flag=TURNAROUND category=handled edge case
+NAUKRI 2017-03 eps_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+NAUKRI 2020-03 eps_cagr_3yr: flag=BOTH_NEGATIVE category=handled edge case
+NAUKRI 2023-03 eps_cagr_3yr: flag=BOTH_NEGATIVE category=handled edge case
+PNB 2016-03 eps_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+PNB 2018-03 eps_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+PNB 2019-03 eps_cagr_3yr: flag=BOTH_NEGATIVE category=handled edge case
+PNB 2021-03 eps_cagr_3yr: flag=TURNAROUND category=handled edge case
+PNB 2022-03 eps_cagr_3yr: flag=TURNAROUND category=handled edge case
+SBIN 2018-03 eps_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+SBIN 2020-03 eps_cagr_3yr: flag=ZERO_BASE category=handled edge case
+SBIN 2021-03 eps_cagr_3yr: flag=TURNAROUND category=handled edge case
+TATACONSUM 2019-03 eps_cagr_3yr: flag=ZERO_BASE category=handled edge case
+TATAMOTORS 2019-03 eps_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+TATAMOTORS 2020-03 eps_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+TATAMOTORS 2021-03 eps_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+TATAMOTORS 2022-03 eps_cagr_3yr: flag=BOTH_NEGATIVE category=handled edge case
+TATAMOTORS 2023-03 eps_cagr_3yr: flag=TURNAROUND category=handled edge case
+TATAMOTORS 2024-03 eps_cagr_3yr: flag=TURNAROUND category=handled edge case
+TATAPOWER 2016-03 eps_cagr_3yr: flag=ZERO_BASE category=handled edge case
+TATAPOWER 2017-03 eps_cagr_3yr: flag=TURNAROUND category=handled edge case
+TATASTEEL 2017-03 eps_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+TATASTEEL 2018-03 eps_cagr_3yr: flag=TURNAROUND category=handled edge case
+TATASTEEL 2019-03 eps_cagr_3yr: flag=ZERO_BASE category=handled edge case
+TATASTEEL 2020-03 eps_cagr_3yr: flag=TURNAROUND category=handled edge case
+TATASTEEL 2024-03 eps_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+TRENT 2016-03 eps_cagr_3yr: flag=TURNAROUND category=handled edge case
+TRENT 2017-03 eps_cagr_3yr: flag=TURNAROUND category=handled edge case
+TRENT 2021-03 eps_cagr_3yr: flag=DECLINE_TO_LOSS category=handled edge case
+TRENT 2024-03 eps_cagr_3yr: flag=TURNAROUND category=handled edge case
+ADANIENSOL 2019-03 revenue_cagr_5yr: flag=ZERO_BASE category=handled edge case
+ADANIENSOL 2019-03 pat_cagr_5yr: flag=ZERO_BASE category=handled edge case
+ADANIENSOL 2020-03 pat_cagr_5yr: flag=TURNAROUND category=handled edge case
+ADANIGREEN 2022-03 pat_cagr_5yr: flag=TURNAROUND category=handled edge case
+ADANIGREEN 2023-03 pat_cagr_5yr: flag=TURNAROUND category=handled edge case
+ADANIGREEN 2024-03 pat_cagr_5yr: flag=TURNAROUND category=handled edge case
+ADANIPOWER 2018-03 pat_cagr_5yr: flag=BOTH_NEGATIVE category=handled edge case
+ADANIPOWER 2019-03 pat_cagr_5yr: flag=BOTH_NEGATIVE category=handled edge case
+ADANIPOWER 2020-03 pat_cagr_5yr: flag=BOTH_NEGATIVE category=handled edge case
+ADANIPOWER 2022-03 pat_cagr_5yr: flag=TURNAROUND category=handled edge case
+ADANIPOWER 2023-03 pat_cagr_5yr: flag=TURNAROUND category=handled edge case
+ADANIPOWER 2024-03 pat_cagr_5yr: flag=TURNAROUND category=handled edge case
+BANKBARODA 2018-03 pat_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+BANKBARODA 2021-03 pat_cagr_5yr: flag=TURNAROUND category=handled edge case
+BANKBARODA 2023-03 pat_cagr_5yr: flag=TURNAROUND category=handled edge case
+BHARTIARTL 2020-03 pat_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+BHARTIARTL 2021-03 pat_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+BHEL 2020-03 pat_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+BHEL 2021-03 pat_cagr_5yr: flag=BOTH_NEGATIVE category=handled edge case
+CANBK 2018-03 pat_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+CANBK 2020-03 pat_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+CANBK 2021-03 pat_cagr_5yr: flag=TURNAROUND category=handled edge case
+CANBK 2023-03 pat_cagr_5yr: flag=TURNAROUND category=handled edge case
+DLF 2020-03 pat_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+GODREJCP 2024-03 pat_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+HINDALCO 2021-03 pat_cagr_5yr: flag=TURNAROUND category=handled edge case
+INDIGO 2020-03 pat_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+INDIGO 2021-03 pat_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+INDIGO 2022-03 pat_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+INDIGO 2023-03 pat_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+IOC 2020-03 pat_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+JINDALSTEL 2018-03 pat_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+JINDALSTEL 2019-03 pat_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+JINDALSTEL 2020-03 pat_cagr_5yr: flag=BOTH_NEGATIVE category=handled edge case
+JINDALSTEL 2021-03 pat_cagr_5yr: flag=TURNAROUND category=handled edge case
+JINDALSTEL 2022-03 pat_cagr_5yr: flag=TURNAROUND category=handled edge case
+JINDALSTEL 2023-03 pat_cagr_5yr: flag=TURNAROUND category=handled edge case
+JINDALSTEL 2024-03 pat_cagr_5yr: flag=TURNAROUND category=handled edge case
+JSWSTEEL 2021-03 pat_cagr_5yr: flag=TURNAROUND category=handled edge case
+M&M 2020-03 pat_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+NAUKRI 2020-03 pat_cagr_5yr: flag=BOTH_NEGATIVE category=handled edge case
+NAUKRI 2022-03 pat_cagr_5yr: flag=TURNAROUND category=handled edge case
+NAUKRI 2023-03 pat_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+PNB 2018-03 pat_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+PNB 2019-03 pat_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+PNB 2021-03 pat_cagr_5yr: flag=TURNAROUND category=handled edge case
+PNB 2023-03 pat_cagr_5yr: flag=TURNAROUND category=handled edge case
+PNB 2024-03 pat_cagr_5yr: flag=TURNAROUND category=handled edge case
+SBIN 2018-03 pat_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+SBIN 2022-03 pat_cagr_5yr: flag=TURNAROUND category=handled edge case
+SBIN 2023-03 pat_cagr_5yr: flag=TURNAROUND category=handled edge case
+TATACONSUM 2021-03 pat_cagr_5yr: flag=TURNAROUND category=handled edge case
+TATAMOTORS 2019-03 pat_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+TATAMOTORS 2020-03 pat_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+TATAMOTORS 2021-03 pat_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+TATAMOTORS 2022-03 pat_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+TATAMOTORS 2024-03 pat_cagr_5yr: flag=TURNAROUND category=handled edge case
+TATASTEEL 2018-03 pat_cagr_5yr: flag=TURNAROUND category=handled edge case
+TATASTEEL 2020-03 pat_cagr_5yr: flag=TURNAROUND category=handled edge case
+TATASTEEL 2021-03 pat_cagr_5yr: flag=TURNAROUND category=handled edge case
+TATASTEEL 2022-03 pat_cagr_5yr: flag=TURNAROUND category=handled edge case
+TATASTEEL 2024-03 pat_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+TRENT 2018-03 pat_cagr_5yr: flag=TURNAROUND category=handled edge case
+TRENT 2019-03 pat_cagr_5yr: flag=TURNAROUND category=handled edge case
+TRENT 2021-03 pat_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+ADANIENSOL 2019-03 eps_cagr_5yr: flag=ZERO_BASE category=handled edge case
+ADANIENSOL 2020-03 eps_cagr_5yr: flag=ZERO_BASE category=handled edge case
+ADANIGREEN 2022-03 eps_cagr_5yr: flag=ZERO_BASE category=handled edge case
+ADANIGREEN 2023-03 eps_cagr_5yr: flag=TURNAROUND category=handled edge case
+ADANIGREEN 2024-03 eps_cagr_5yr: flag=TURNAROUND category=handled edge case
+ADANIPOWER 2018-03 eps_cagr_5yr: flag=BOTH_NEGATIVE category=handled edge case
+ADANIPOWER 2019-03 eps_cagr_5yr: flag=BOTH_NEGATIVE category=handled edge case
+ADANIPOWER 2020-03 eps_cagr_5yr: flag=BOTH_NEGATIVE category=handled edge case
+ADANIPOWER 2022-03 eps_cagr_5yr: flag=TURNAROUND category=handled edge case
+ADANIPOWER 2023-03 eps_cagr_5yr: flag=TURNAROUND category=handled edge case
+ADANIPOWER 2024-03 eps_cagr_5yr: flag=TURNAROUND category=handled edge case
+BANKBARODA 2018-03 eps_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+BANKBARODA 2021-03 eps_cagr_5yr: flag=TURNAROUND category=handled edge case
+BANKBARODA 2023-03 eps_cagr_5yr: flag=TURNAROUND category=handled edge case
+BHARTIARTL 2020-03 eps_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+BHARTIARTL 2021-03 eps_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+BHEL 2020-03 eps_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+BHEL 2021-03 eps_cagr_5yr: flag=BOTH_NEGATIVE category=handled edge case
+CANBK 2018-03 eps_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+CANBK 2020-03 eps_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+CANBK 2021-03 eps_cagr_5yr: flag=TURNAROUND category=handled edge case
+CANBK 2023-03 eps_cagr_5yr: flag=TURNAROUND category=handled edge case
+DLF 2020-03 eps_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+GODREJCP 2024-03 eps_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+HINDALCO 2021-03 eps_cagr_5yr: flag=TURNAROUND category=handled edge case
+INDIGO 2020-03 eps_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+INDIGO 2021-03 eps_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+INDIGO 2022-03 eps_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+INDIGO 2023-03 eps_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+IOC 2020-03 eps_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+JINDALSTEL 2018-03 eps_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+JINDALSTEL 2019-03 eps_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+JINDALSTEL 2020-03 eps_cagr_5yr: flag=BOTH_NEGATIVE category=handled edge case
+JINDALSTEL 2021-03 eps_cagr_5yr: flag=TURNAROUND category=handled edge case
+JINDALSTEL 2022-03 eps_cagr_5yr: flag=TURNAROUND category=handled edge case
+JINDALSTEL 2023-03 eps_cagr_5yr: flag=TURNAROUND category=handled edge case
+JINDALSTEL 2024-03 eps_cagr_5yr: flag=TURNAROUND category=handled edge case
+JSWENERGY 2023-03 eps_cagr_5yr: flag=ZERO_BASE category=handled edge case
+JSWSTEEL 2021-03 eps_cagr_5yr: flag=TURNAROUND category=handled edge case
+NAUKRI 2020-03 eps_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+NAUKRI 2022-03 eps_cagr_5yr: flag=TURNAROUND category=handled edge case
+NAUKRI 2023-03 eps_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+PNB 2018-03 eps_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+PNB 2019-03 eps_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+PNB 2021-03 eps_cagr_5yr: flag=TURNAROUND category=handled edge case
+PNB 2023-03 eps_cagr_5yr: flag=TURNAROUND category=handled edge case
+PNB 2024-03 eps_cagr_5yr: flag=TURNAROUND category=handled edge case
+SBIN 2018-03 eps_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+SBIN 2022-03 eps_cagr_5yr: flag=ZERO_BASE category=handled edge case
+SBIN 2023-03 eps_cagr_5yr: flag=TURNAROUND category=handled edge case
+TATACONSUM 2021-03 eps_cagr_5yr: flag=ZERO_BASE category=handled edge case
+TATAMOTORS 2019-03 eps_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+TATAMOTORS 2020-03 eps_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+TATAMOTORS 2021-03 eps_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+TATAMOTORS 2022-03 eps_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+TATAMOTORS 2024-03 eps_cagr_5yr: flag=TURNAROUND category=handled edge case
+TATAPOWER 2018-03 eps_cagr_5yr: flag=ZERO_BASE category=handled edge case
+TATAPOWER 2019-03 eps_cagr_5yr: flag=TURNAROUND category=handled edge case
+TATASTEEL 2018-03 eps_cagr_5yr: flag=TURNAROUND category=handled edge case
+TATASTEEL 2020-03 eps_cagr_5yr: flag=TURNAROUND category=handled edge case
+TATASTEEL 2021-03 eps_cagr_5yr: flag=ZERO_BASE category=handled edge case
+TATASTEEL 2022-03 eps_cagr_5yr: flag=TURNAROUND category=handled edge case
+TATASTEEL 2024-03 eps_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+TRENT 2018-03 eps_cagr_5yr: flag=TURNAROUND category=handled edge case
+TRENT 2019-03 eps_cagr_5yr: flag=TURNAROUND category=handled edge case
+TRENT 2021-03 eps_cagr_5yr: flag=DECLINE_TO_LOSS category=handled edge case
+ADANIENSOL 2024-03 revenue_cagr_10yr: flag=ZERO_BASE category=handled edge case
+ADANIENSOL 2024-03 pat_cagr_10yr: flag=ZERO_BASE category=handled edge case
+ADANIPOWER 2023-03 pat_cagr_10yr: flag=TURNAROUND category=handled edge case
+ADANIPOWER 2024-03 pat_cagr_10yr: flag=TURNAROUND category=handled edge case
+GODREJCP 2024-03 pat_cagr_10yr: flag=DECLINE_TO_LOSS category=handled edge case
+INDIGO 2023-03 pat_cagr_10yr: flag=DECLINE_TO_LOSS category=handled edge case
+NAUKRI 2023-03 pat_cagr_10yr: flag=DECLINE_TO_LOSS category=handled edge case
+TATASTEEL 2023-03 pat_cagr_10yr: flag=TURNAROUND category=handled edge case
+TATASTEEL 2024-03 pat_cagr_10yr: flag=DECLINE_TO_LOSS category=handled edge case
+TRENT 2023-03 pat_cagr_10yr: flag=TURNAROUND category=handled edge case
+TRENT 2024-03 pat_cagr_10yr: flag=TURNAROUND category=handled edge case
+ADANIENSOL 2024-03 eps_cagr_10yr: flag=ZERO_BASE category=handled edge case
+ADANIPOWER 2023-03 eps_cagr_10yr: flag=TURNAROUND category=handled edge case
+ADANIPOWER 2024-03 eps_cagr_10yr: flag=TURNAROUND category=handled edge case
+GODREJCP 2024-03 eps_cagr_10yr: flag=DECLINE_TO_LOSS category=handled edge case
+INDIGO 2023-03 eps_cagr_10yr: flag=DECLINE_TO_LOSS category=handled edge case
+NAUKRI 2023-03 eps_cagr_10yr: flag=DECLINE_TO_LOSS category=handled edge case
+TATAPOWER 2023-03 eps_cagr_10yr: flag=ZERO_BASE category=handled edge case
+TATAPOWER 2024-03 eps_cagr_10yr: flag=TURNAROUND category=handled edge case
+TATASTEEL 2023-03 eps_cagr_10yr: flag=TURNAROUND category=handled edge case
+TATASTEEL 2024-03 eps_cagr_10yr: flag=DECLINE_TO_LOSS category=handled edge case
+TRENT 2023-03 eps_cagr_10yr: flag=TURNAROUND category=handled edge case
+TRENT 2024-03 eps_cagr_10yr: flag=TURNAROUND category=handled edge case
+
+[3] DEBT-FREE ICR SUBSTITUTIONS - 31
+ABB 2012-12: interest=0 icr_label=Debt Free category=handled edge case
+ABB 2014-03: interest=0 icr_label=Debt Free category=handled edge case
+ABB 2015-03: interest=0 icr_label=Debt Free category=handled edge case
+ADANIENSOL 2014-03: interest=0 icr_label=Debt Free category=handled edge case
+BAJAJHLDNG 2013-03: interest=0 icr_label=Debt Free category=handled edge case
+BAJAJHLDNG 2014-03: interest=0 icr_label=Debt Free category=handled edge case
+BAJAJHLDNG 2015-03: interest=0 icr_label=Debt Free category=handled edge case
+BAJAJHLDNG 2016-03: interest=0 icr_label=Debt Free category=handled edge case
+BAJAJHLDNG 2017-03: interest=0 icr_label=Debt Free category=handled edge case
+BAJAJHLDNG 2018-03: interest=0 icr_label=Debt Free category=handled edge case
+BAJAJHLDNG 2019-03: interest=0 icr_label=Debt Free category=handled edge case
+BOSCHLTD 2013-12: interest=0 icr_label=Debt Free category=handled edge case
+CHOLAFIN 2015-03: interest=0 icr_label=Debt Free category=handled edge case
+CHOLAFIN 2018-03: interest=0 icr_label=Debt Free category=handled edge case
+CHOLAFIN 2020-03: interest=0 icr_label=Debt Free category=handled edge case
+ICICIGI 2019-03: interest=0 icr_label=Debt Free category=handled edge case
+ICICIPRULI 2016-03: interest=0 icr_label=Debt Free category=handled edge case
+INFY 2016-03: interest=0 icr_label=Debt Free category=handled edge case
+INFY 2017-03: interest=0 icr_label=Debt Free category=handled edge case
+INFY 2018-03: interest=0 icr_label=Debt Free category=handled edge case
+INFY 2019-03: interest=0 icr_label=Debt Free category=handled edge case
+IRCTC 2015-03: interest=0 icr_label=Debt Free category=handled edge case
+IRCTC 2016-03: interest=0 icr_label=Debt Free category=handled edge case
+JIOFIN 2023-03: interest=0 icr_label=Debt Free category=handled edge case
+LICI 2019-03: interest=0 icr_label=Debt Free category=handled edge case
+LICI 2020-03: interest=0 icr_label=Debt Free category=handled edge case
+LICI 2021-03: interest=0 icr_label=Debt Free category=handled edge case
+LICI 2022-03: interest=0 icr_label=Debt Free category=handled edge case
+SBILIFE 2020-03: interest=0 icr_label=Debt Free category=handled edge case
+SBILIFE 2021-03: interest=0 icr_label=Debt Free category=handled edge case
+SBILIFE 2022-03: interest=0 icr_label=Debt Free category=handled edge case
+
+[4] ZERO-DENOMINATOR SUBSTITUTION COUNTS
+net_profit_margin_pct (sales=0): 1 rows category=handled edge case
+operating_profit_margin_pct (sales=0): 1 rows category=handled edge case
+return_on_equity_pct (equity+reserves<=0): 0 rows category=handled edge case
+return_on_assets_pct (total_assets=0): 1 rows category=handled edge case
+asset_turnover (total_assets=0): 1 rows category=handled edge case
+interest_coverage (interest=0 -> Debt Free): 31 rows category=handled edge case
+
+[5] FINANCIALS CARVE-OUT
+D/E high-leverage flag suppressed for 23 Financials companies; sector-relative ROCE benchmark active; category=formula discrepancy (by design)

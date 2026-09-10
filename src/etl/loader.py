@@ -15,6 +15,7 @@ from src.etl.normaliser import (
     TICKER_MIN_LENGTH,
     normalize_ticker,
     normalize_year,
+    repair_pl_column_rotation,
 )
 from src.settings import get_settings
 
@@ -303,6 +304,8 @@ def load_core_table(name: str) -> pd.DataFrame:
         TICKER_COLUMNS.get(name),
         YEAR_COLUMNS.get(name),
     )
+    if name == "profitandloss":
+        frame = repair_pl_column_rotation(frame)
     frame = coerce_numeric(frame, NUMERIC_COLUMNS.get(name, ()))
     for column in TEXT_COLUMNS.get(name, ()):
         if column in frame.columns:
