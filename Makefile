@@ -20,3 +20,7 @@ api:
 
 clean:
 	uv run python scripts/clean.py
+	
+intelligence:
+	uv run python -m src.analytics.cashflow_intelligence
+

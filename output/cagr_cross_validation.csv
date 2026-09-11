@@ -1,0 +1,3 @@
+company_id,metric,period_years,parsed_value_pct,computed_value_pct,absolute_diff_pct,validation_flag
+SBILIFE,pat_cagr,10,9.0,10.03,1.03,MATCH
+SBILIFE,revenue_cagr,10,23.0,22.56,0.44,MATCH

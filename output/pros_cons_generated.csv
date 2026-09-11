@@ -1,0 +1,253 @@
+company_id,type,rule_id,text,confidence_pct
+ABB,pro,PRO-14,13 years of audited listed financial history supports reliable fundamental trend analysis,65.0
+ABB,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+ADANIENSOL,pro,PRO-14,12 years of audited listed financial history supports reliable fundamental trend analysis,65.0
+ADANIENSOL,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+ADANIENT,pro,PRO-14,13 years of audited listed financial history supports reliable fundamental trend analysis,65.0
+ADANIENT,con,CON-08,Rising debt-to-equity ratio over 3 years suggests increasing financial leverage risk,78.0
+ADANIGREEN,pro,PRO-14,9 years of audited listed financial history supports reliable fundamental trend analysis,65.0
+ADANIGREEN,con,CON-01,Debt-to-equity ratio of 6.38 is elevated for a non-financial company and warrants monitoring,99.0
+ADANIPORTS,pro,PRO-14,13 years of audited listed financial history supports reliable fundamental trend analysis,65.0
+ADANIPORTS,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+ADANIPOWER,pro,PRO-02,Strong free cash flow generation over 5 years signals healthy business fundamentals,95.0
+ADANIPOWER,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+AMBUJACEM,pro,PRO-14,13 years of audited listed financial history supports reliable fundamental trend analysis,65.0
+AMBUJACEM,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+APOLLOHOSP,pro,PRO-02,Strong free cash flow generation over 5 years signals healthy business fundamentals,95.0
+APOLLOHOSP,con,CON-08,Rising debt-to-equity ratio over 3 years suggests increasing financial leverage risk,78.0
+ASIANPAINT,pro,PRO-02,Strong free cash flow generation over 5 years signals healthy business fundamentals,95.0
+ASIANPAINT,con,CON-08,Rising debt-to-equity ratio over 3 years suggests increasing financial leverage risk,78.0
+ATGL,pro,PRO-12,Growing asset base funded by internal accruals reflects self-sustaining growth,75.0
+ATGL,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+AXISBANK,pro,PRO-05,Operating profit margin above 25% indicates strong pricing power and cost discipline,75.5
+AXISBANK,pro,PRO-06,Net profit compounding at above 20% over 5 years creates significant shareholder value,99.0
+AXISBANK,pro,PRO-09,Earnings per share growing above 15% CAGR indicates strong earnings quality and compounding,99.0
+AXISBANK,pro,PRO-11,Revenue growing slower than profits shows improving operating leverage and scale benefits,99.0
+AXISBANK,con,CON-10,Return on capital employed below 10% suggests the business is not generating sufficient returns on invested capital,89.9
+AXISBANK,con,CON-11,Net debt exceeding 3 times EBITDA is a high leverage ratio and limits financial flexibility,99.0
+BAJAJ-AUTO,pro,PRO-02,Strong free cash flow generation over 5 years signals healthy business fundamentals,95.0
+BAJAJ-AUTO,con,CON-08,Rising debt-to-equity ratio over 3 years suggests increasing financial leverage risk,78.0
+BAJAJFINSV,pro,PRO-14,13 years of audited listed financial history supports reliable fundamental trend analysis,65.0
+BAJAJFINSV,con,CON-02,Free cash flow negative for 3 consecutive years raises concern about cash generation quality,74.0
+BAJAJHLDNG,pro,PRO-12,Growing asset base funded by internal accruals reflects self-sustaining growth,75.0
+BAJAJHLDNG,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+BAJFINANCE,pro,PRO-14,11 years of audited listed financial history supports reliable fundamental trend analysis,65.0
+BAJFINANCE,con,CON-02,Free cash flow negative for 3 consecutive years raises concern about cash generation quality,95.0
+BANKBARODA,pro,PRO-04,Revenue growing at above 15% CAGR over 5 years reflects strong business momentum,66.6
+BANKBARODA,pro,PRO-05,Operating profit margin above 25% indicates strong pricing power and cost discipline,80.0
+BANKBARODA,pro,PRO-06,Net profit compounding at above 20% over 5 years creates significant shareholder value,99.0
+BANKBARODA,pro,PRO-09,Earnings per share growing above 15% CAGR indicates strong earnings quality and compounding,99.0
+BANKBARODA,pro,PRO-10,Return on equity improving for 3 consecutive years shows strengthening business quality,78.0
+BANKBARODA,pro,PRO-11,Revenue growing slower than profits shows improving operating leverage and scale benefits,99.0
+BANKBARODA,con,CON-03,Operating margins declining for 3 consecutive years suggests pricing or cost pressure,78.0
+BANKBARODA,con,CON-10,Return on capital employed below 10% suggests the business is not generating sufficient returns on invested capital,89.2
+BANKBARODA,con,CON-11,Net debt exceeding 3 times EBITDA is a high leverage ratio and limits financial flexibility,99.0
+BEL,pro,PRO-14,13 years of audited listed financial history supports reliable fundamental trend analysis,65.0
+BEL,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+BHARTIARTL,pro,PRO-14,13 years of audited listed financial history supports reliable fundamental trend analysis,65.0
+BHARTIARTL,con,CON-01,Debt-to-equity ratio of 2.59 is elevated for a non-financial company and warrants monitoring,71.8
+BHEL,pro,PRO-14,13 years of audited listed financial history supports reliable fundamental trend analysis,65.0
+BHEL,con,CON-08,Rising debt-to-equity ratio over 3 years suggests increasing financial leverage risk,78.0
+BOSCHLTD,pro,PRO-02,Strong free cash flow generation over 5 years signals healthy business fundamentals,95.0
+BOSCHLTD,pro,PRO-12,Growing asset base funded by internal accruals reflects self-sustaining growth,75.0
+BOSCHLTD,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+BPCL,pro,PRO-14,13 years of audited listed financial history supports reliable fundamental trend analysis,65.0
+BPCL,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+BRITANNIA,pro,PRO-14,13 years of audited listed financial history supports reliable fundamental trend analysis,65.0
+BRITANNIA,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+CANBK,pro,PRO-04,Revenue growing at above 15% CAGR over 5 years reflects strong business momentum,68.5
+CANBK,pro,PRO-05,Operating profit margin above 25% indicates strong pricing power and cost discipline,86.8
+CANBK,pro,PRO-06,Net profit compounding at above 20% over 5 years creates significant shareholder value,99.0
+CANBK,pro,PRO-08,Consistent dividend yield above 2% backed by positive free cash flow,96.2
+CANBK,pro,PRO-09,Earnings per share growing above 15% CAGR indicates strong earnings quality and compounding,99.0
+CANBK,pro,PRO-10,Return on equity improving for 3 consecutive years shows strengthening business quality,78.0
+CANBK,pro,PRO-11,Revenue growing slower than profits shows improving operating leverage and scale benefits,99.0
+CANBK,con,CON-03,Operating margins declining for 3 consecutive years suggests pricing or cost pressure,78.0
+CANBK,con,CON-10,Return on capital employed below 10% suggests the business is not generating sufficient returns on invested capital,87.6
+CANBK,con,CON-11,Net debt exceeding 3 times EBITDA is a high leverage ratio and limits financial flexibility,99.0
+CHOLAFIN,pro,PRO-14,13 years of audited listed financial history supports reliable fundamental trend analysis,65.0
+CHOLAFIN,con,CON-02,Free cash flow negative for 3 consecutive years raises concern about cash generation quality,95.0
+CHOLAFIN,con,CON-08,Rising debt-to-equity ratio over 3 years suggests increasing financial leverage risk,78.0
+CIPLA,pro,PRO-02,Strong free cash flow generation over 5 years signals healthy business fundamentals,95.0
+CIPLA,pro,PRO-12,Growing asset base funded by internal accruals reflects self-sustaining growth,75.0
+CIPLA,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+COALINDIA,pro,PRO-02,Strong free cash flow generation over 5 years signals healthy business fundamentals,95.0
+COALINDIA,con,CON-08,Rising debt-to-equity ratio over 3 years suggests increasing financial leverage risk,78.0
+DABUR,pro,PRO-02,Strong free cash flow generation over 5 years signals healthy business fundamentals,95.0
+DABUR,con,CON-08,Rising debt-to-equity ratio over 3 years suggests increasing financial leverage risk,78.0
+DIVISLAB,pro,PRO-14,13 years of audited listed financial history supports reliable fundamental trend analysis,65.0
+DIVISLAB,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+DLF,pro,PRO-02,Strong free cash flow generation over 5 years signals healthy business fundamentals,95.0
+DLF,pro,PRO-12,Growing asset base funded by internal accruals reflects self-sustaining growth,75.0
+DLF,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+DMART,pro,PRO-14,13 years of audited listed financial history supports reliable fundamental trend analysis,65.0
+DMART,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+DRREDDY,pro,PRO-02,Strong free cash flow generation over 5 years signals healthy business fundamentals,95.0
+DRREDDY,con,CON-08,Rising debt-to-equity ratio over 3 years suggests increasing financial leverage risk,78.0
+EICHERMOT,pro,PRO-02,Strong free cash flow generation over 5 years signals healthy business fundamentals,95.0
+EICHERMOT,pro,PRO-12,Growing asset base funded by internal accruals reflects self-sustaining growth,75.0
+EICHERMOT,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+GAIL,pro,PRO-12,Growing asset base funded by internal accruals reflects self-sustaining growth,75.0
+GAIL,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+GODREJCP,pro,PRO-14,13 years of audited listed financial history supports reliable fundamental trend analysis,65.0
+GODREJCP,con,CON-08,Rising debt-to-equity ratio over 3 years suggests increasing financial leverage risk,78.0
+GRASIM,pro,PRO-14,13 years of audited listed financial history supports reliable fundamental trend analysis,65.0
+GRASIM,con,CON-08,Rising debt-to-equity ratio over 3 years suggests increasing financial leverage risk,78.0
+HAL,pro,PRO-14,13 years of audited listed financial history supports reliable fundamental trend analysis,65.0
+HAL,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+HAVELLS,pro,PRO-14,13 years of audited listed financial history supports reliable fundamental trend analysis,65.0
+HAVELLS,con,CON-08,Rising debt-to-equity ratio over 3 years suggests increasing financial leverage risk,78.0
+HCLTECH,pro,PRO-02,Strong free cash flow generation over 5 years signals healthy business fundamentals,95.0
+HCLTECH,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+HDFCBANK,pro,PRO-04,Revenue growing at above 15% CAGR over 5 years reflects strong business momentum,78.5
+HDFCBANK,pro,PRO-05,Operating profit margin above 25% indicates strong pricing power and cost discipline,99.0
+HDFCBANK,pro,PRO-06,Net profit compounding at above 20% over 5 years creates significant shareholder value,67.7
+HDFCBANK,pro,PRO-08,Consistent dividend yield above 2% backed by positive free cash flow,99.0
+HDFCBANK,pro,PRO-09,Earnings per share growing above 15% CAGR indicates strong earnings quality and compounding,61.1
+HDFCBANK,pro,PRO-11,Revenue growing slower than profits shows improving operating leverage and scale benefits,67.7
+HDFCBANK,con,CON-06,Interest coverage ratio below 1.5x indicates the company is at risk of not meeting its debt obligations,62.6
+HDFCBANK,con,CON-10,Return on capital employed below 10% suggests the business is not generating sufficient returns on invested capital,80.8
+HDFCBANK,con,CON-11,Net debt exceeding 3 times EBITDA is a high leverage ratio and limits financial flexibility,99.0
+HDFCLIFE,pro,PRO-14,13 years of audited listed financial history supports reliable fundamental trend analysis,65.0
+HDFCLIFE,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+HEROMOTOCO,pro,PRO-02,Strong free cash flow generation over 5 years signals healthy business fundamentals,95.0
+HEROMOTOCO,pro,PRO-12,Growing asset base funded by internal accruals reflects self-sustaining growth,75.0
+HEROMOTOCO,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+HINDALCO,pro,PRO-14,13 years of audited listed financial history supports reliable fundamental trend analysis,65.0
+HINDALCO,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+HINDUNILVR,pro,PRO-02,Strong free cash flow generation over 5 years signals healthy business fundamentals,95.0
+HINDUNILVR,con,CON-08,Rising debt-to-equity ratio over 3 years suggests increasing financial leverage risk,78.0
+ICICIBANK,pro,PRO-04,Revenue growing at above 15% CAGR over 5 years reflects strong business momentum,66.0
+ICICIBANK,pro,PRO-05,Operating profit margin above 25% indicates strong pricing power and cost discipline,99.0
+ICICIBANK,pro,PRO-06,Net profit compounding at above 20% over 5 years creates significant shareholder value,99.0
+ICICIBANK,pro,PRO-08,Consistent dividend yield above 2% backed by positive free cash flow,88.6
+ICICIBANK,pro,PRO-09,Earnings per share growing above 15% CAGR indicates strong earnings quality and compounding,99.0
+ICICIBANK,pro,PRO-10,Return on equity improving for 3 consecutive years shows strengthening business quality,78.0
+ICICIBANK,pro,PRO-11,Revenue growing slower than profits shows improving operating leverage and scale benefits,99.0
+ICICIBANK,con,CON-03,Operating margins declining for 3 consecutive years suggests pricing or cost pressure,78.0
+ICICIBANK,con,CON-06,Interest coverage ratio below 1.5x indicates the company is at risk of not meeting its debt obligations,65.3
+ICICIBANK,con,CON-10,Return on capital employed below 10% suggests the business is not generating sufficient returns on invested capital,79.5
+ICICIBANK,con,CON-11,Net debt exceeding 3 times EBITDA is a high leverage ratio and limits financial flexibility,99.0
+ICICIGI,pro,PRO-02,Strong free cash flow generation over 5 years signals healthy business fundamentals,95.0
+ICICIGI,pro,PRO-03,Debt-free balance sheet provides financial flexibility and eliminates interest burden,90.0
+ICICIGI,pro,PRO-12,Growing asset base funded by internal accruals reflects self-sustaining growth,75.0
+ICICIGI,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+ICICIPRULI,pro,PRO-03,Debt-free balance sheet provides financial flexibility and eliminates interest burden,90.0
+ICICIPRULI,pro,PRO-12,Growing asset base funded by internal accruals reflects self-sustaining growth,75.0
+ICICIPRULI,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+INDIGO,pro,PRO-02,Strong free cash flow generation over 5 years signals healthy business fundamentals,95.0
+INDIGO,con,CON-08,Rising debt-to-equity ratio over 3 years suggests increasing financial leverage risk,78.0
+INDUSINDBK,pro,PRO-04,Revenue growing at above 15% CAGR over 5 years reflects strong business momentum,61.3
+INDUSINDBK,pro,PRO-05,Operating profit margin above 25% indicates strong pricing power and cost discipline,81.7
+INDUSINDBK,pro,PRO-06,Net profit compounding at above 20% over 5 years creates significant shareholder value,64.2
+INDUSINDBK,pro,PRO-09,Earnings per share growing above 15% CAGR indicates strong earnings quality and compounding,62.4
+INDUSINDBK,pro,PRO-10,Return on equity improving for 3 consecutive years shows strengthening business quality,78.0
+INDUSINDBK,pro,PRO-11,Revenue growing slower than profits shows improving operating leverage and scale benefits,86.3
+INDUSINDBK,con,CON-03,Operating margins declining for 3 consecutive years suggests pricing or cost pressure,78.0
+INDUSINDBK,con,CON-10,Return on capital employed below 10% suggests the business is not generating sufficient returns on invested capital,86.1
+INDUSINDBK,con,CON-11,Net debt exceeding 3 times EBITDA is a high leverage ratio and limits financial flexibility,99.0
+INFY,pro,PRO-02,Strong free cash flow generation over 5 years signals healthy business fundamentals,95.0
+INFY,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+IOC,pro,PRO-14,13 years of audited listed financial history supports reliable fundamental trend analysis,65.0
+IOC,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+IRCTC,pro,PRO-12,Growing asset base funded by internal accruals reflects self-sustaining growth,75.0
+IRCTC,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+IRFC,pro,PRO-12,Growing asset base funded by internal accruals reflects self-sustaining growth,75.0
+IRFC,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+ITC,pro,PRO-02,Strong free cash flow generation over 5 years signals healthy business fundamentals,95.0
+ITC,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+JINDALSTEL,pro,PRO-14,13 years of audited listed financial history supports reliable fundamental trend analysis,65.0
+JINDALSTEL,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+JIOFIN,pro,PRO-03,Debt-free balance sheet provides financial flexibility and eliminates interest burden,90.0
+JIOFIN,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+JSWENERGY,pro,PRO-12,Growing asset base funded by internal accruals reflects self-sustaining growth,75.0
+JSWENERGY,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+JSWSTEEL,pro,PRO-14,13 years of audited listed financial history supports reliable fundamental trend analysis,65.0
+JSWSTEEL,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+KOTAKBANK,pro,PRO-05,Operating profit margin above 25% indicates strong pricing power and cost discipline,99.0
+KOTAKBANK,pro,PRO-06,Net profit compounding at above 20% over 5 years creates significant shareholder value,60.8
+KOTAKBANK,pro,PRO-09,Earnings per share growing above 15% CAGR indicates strong earnings quality and compounding,71.6
+KOTAKBANK,pro,PRO-10,Return on equity improving for 3 consecutive years shows strengthening business quality,78.0
+KOTAKBANK,pro,PRO-11,Revenue growing slower than profits shows improving operating leverage and scale benefits,87.4
+KOTAKBANK,con,CON-06,Interest coverage ratio below 1.5x indicates the company is at risk of not meeting its debt obligations,67.0
+KOTAKBANK,con,CON-10,Return on capital employed below 10% suggests the business is not generating sufficient returns on invested capital,71.5
+KOTAKBANK,con,CON-11,Net debt exceeding 3 times EBITDA is a high leverage ratio and limits financial flexibility,97.6
+LICI,pro,PRO-02,Strong free cash flow generation over 5 years signals healthy business fundamentals,95.0
+LICI,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+LODHA,pro,PRO-14,13 years of audited listed financial history supports reliable fundamental trend analysis,65.0
+LODHA,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+LT,pro,PRO-14,13 years of audited listed financial history supports reliable fundamental trend analysis,65.0
+LT,con,CON-08,Rising debt-to-equity ratio over 3 years suggests increasing financial leverage risk,78.0
+LTIM,pro,PRO-02,Strong free cash flow generation over 5 years signals healthy business fundamentals,95.0
+LTIM,con,CON-08,Rising debt-to-equity ratio over 3 years suggests increasing financial leverage risk,78.0
+M&M,pro,PRO-14,13 years of audited listed financial history supports reliable fundamental trend analysis,65.0
+M&M,con,CON-08,Rising debt-to-equity ratio over 3 years suggests increasing financial leverage risk,78.0
+MARUTI,pro,PRO-02,Strong free cash flow generation over 5 years signals healthy business fundamentals,95.0
+MARUTI,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+MOTHERSON,pro,PRO-02,Strong free cash flow generation over 5 years signals healthy business fundamentals,95.0
+MOTHERSON,con,CON-08,Rising debt-to-equity ratio over 3 years suggests increasing financial leverage risk,78.0
+NAUKRI,pro,PRO-14,13 years of audited listed financial history supports reliable fundamental trend analysis,65.0
+NAUKRI,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+NESTLEIND,pro,PRO-02,Strong free cash flow generation over 5 years signals healthy business fundamentals,95.0
+NESTLEIND,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+NHPC,pro,PRO-02,Strong free cash flow generation over 5 years signals healthy business fundamentals,95.0
+NHPC,con,CON-08,Rising debt-to-equity ratio over 3 years suggests increasing financial leverage risk,78.0
+NTPC,pro,PRO-14,13 years of audited listed financial history supports reliable fundamental trend analysis,65.0
+NTPC,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+ONGC,pro,PRO-02,Strong free cash flow generation over 5 years signals healthy business fundamentals,95.0
+ONGC,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+PFC,pro,PRO-14,13 years of audited listed financial history supports reliable fundamental trend analysis,65.0
+PFC,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+PIDILITIND,pro,PRO-12,Growing asset base funded by internal accruals reflects self-sustaining growth,75.0
+PIDILITIND,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+PNB,pro,PRO-01,Consistently high return on equity above 20% demonstrates exceptional capital efficiency,81.3
+PNB,pro,PRO-04,Revenue growing at above 15% CAGR over 5 years reflects strong business momentum,62.4
+PNB,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+POWERGRID,pro,PRO-02,Strong free cash flow generation over 5 years signals healthy business fundamentals,95.0
+POWERGRID,pro,PRO-12,Growing asset base funded by internal accruals reflects self-sustaining growth,75.0
+POWERGRID,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+RECLTD,pro,PRO-14,13 years of audited listed financial history supports reliable fundamental trend analysis,65.0
+RECLTD,con,CON-02,Free cash flow negative for 3 consecutive years raises concern about cash generation quality,95.0
+RELIANCE,pro,PRO-12,Growing asset base funded by internal accruals reflects self-sustaining growth,75.0
+RELIANCE,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+SBILIFE,pro,PRO-03,Debt-free balance sheet provides financial flexibility and eliminates interest burden,90.0
+SBILIFE,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+SBIN,pro,PRO-06,Net profit compounding at above 20% over 5 years creates significant shareholder value,99.0
+SBIN,pro,PRO-09,Earnings per share growing above 15% CAGR indicates strong earnings quality and compounding,99.0
+SBIN,pro,PRO-11,Revenue growing slower than profits shows improving operating leverage and scale benefits,99.0
+SBIN,con,CON-06,Interest coverage ratio below 1.5x indicates the company is at risk of not meeting its debt obligations,90.2
+SHREECEM,pro,PRO-14,13 years of audited listed financial history supports reliable fundamental trend analysis,65.0
+SHREECEM,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+SHRIRAMFIN,pro,PRO-14,13 years of audited listed financial history supports reliable fundamental trend analysis,65.0
+SHRIRAMFIN,con,CON-02,Free cash flow negative for 3 consecutive years raises concern about cash generation quality,95.0
+SIEMENS,pro,PRO-07,Very high interest coverage ratio reflects negligible financial stress from debt servicing,99.0
+SIEMENS,pro,PRO-08,Consistent dividend yield above 2% backed by positive free cash flow,93.8
+SIEMENS,pro,PRO-09,Earnings per share growing above 15% CAGR indicates strong earnings quality and compounding,72.4
+SIEMENS,pro,PRO-10,Return on equity improving for 3 consecutive years shows strengthening business quality,78.0
+SIEMENS,pro,PRO-11,Revenue growing slower than profits shows improving operating leverage and scale benefits,94.6
+SIEMENS,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+SUNPHARMA,pro,PRO-12,Growing asset base funded by internal accruals reflects self-sustaining growth,75.0
+SUNPHARMA,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+TATACONSUM,pro,PRO-02,Strong free cash flow generation over 5 years signals healthy business fundamentals,95.0
+TATACONSUM,pro,PRO-12,Growing asset base funded by internal accruals reflects self-sustaining growth,75.0
+TATACONSUM,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+TATAMOTORS,pro,PRO-12,Growing asset base funded by internal accruals reflects self-sustaining growth,75.0
+TATAMOTORS,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+TATAPOWER,pro,PRO-14,13 years of audited listed financial history supports reliable fundamental trend analysis,65.0
+TATAPOWER,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+TATASTEEL,pro,PRO-02,Strong free cash flow generation over 5 years signals healthy business fundamentals,90.0
+TATASTEEL,con,CON-08,Rising debt-to-equity ratio over 3 years suggests increasing financial leverage risk,78.0
+TCS,pro,PRO-02,Strong free cash flow generation over 5 years signals healthy business fundamentals,95.0
+TCS,con,CON-08,Rising debt-to-equity ratio over 3 years suggests increasing financial leverage risk,78.0
+TECHM,pro,PRO-02,Strong free cash flow generation over 5 years signals healthy business fundamentals,95.0
+TECHM,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+TITAN,pro,PRO-14,13 years of audited listed financial history supports reliable fundamental trend analysis,65.0
+TITAN,con,CON-01,Debt-to-equity ratio of 2.22 is elevated for a non-financial company and warrants monitoring,64.5
+TITAN,con,CON-08,Rising debt-to-equity ratio over 3 years suggests increasing financial leverage risk,78.0
+TORNTPHARM,pro,PRO-02,Strong free cash flow generation over 5 years signals healthy business fundamentals,95.0
+TORNTPHARM,pro,PRO-12,Growing asset base funded by internal accruals reflects self-sustaining growth,75.0
+TORNTPHARM,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+TRENT,pro,PRO-14,13 years of audited listed financial history supports reliable fundamental trend analysis,65.0
+TRENT,con,CON-13,No threshold-based red flags detected this cycle; valuation stretch and macro cyclicality remain residual risks to monitor,62.0
+TVSMOTOR,pro,PRO-12,Growing asset base funded by internal accruals reflects self-sustaining growth,75.0
+TVSMOTOR,con,CON-02,Free cash flow negative for 3 consecutive years raises concern about cash generation quality,74.0

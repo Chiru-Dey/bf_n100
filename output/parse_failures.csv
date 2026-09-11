@@ -1,0 +1,10 @@
+company_id,field,raw_text,reason
+TCS,compounded_sales_growth,TTM:            5%             ,Regex pattern mismatch
+TCS,compounded_profit_growth,TTM:                 8%,Regex pattern mismatch
+TCS,roe,Last Year:       52%,Regex pattern mismatch
+HDFCBANK,compounded_sales_growth,TTM:            47%,Regex pattern mismatch
+HDFCBANK,compounded_profit_growth,TTM:                27%,Regex pattern mismatch
+HDFCBANK,roe,Last Year:    17%,Regex pattern mismatch
+INFY,compounded_sales_growth,TTM:            3%,Regex pattern mismatch
+INFY,compounded_profit_growth,TTM:                 8%,Regex pattern mismatch
+INFY,roe,Last Year:     32%,Regex pattern mismatch
