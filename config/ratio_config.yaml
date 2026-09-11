@@ -44,3 +44,6 @@ composite:
     - [10.0, 100.0]
 edge_cases:
   cross_check_tolerance_pct: 5.0
+valuation:
+  caution_multiplier: 1.5
+  discount_multiplier: 0.7
