@@ -2,7 +2,10 @@
 
 import pandas as pd
 
-from src.analytics.capital_allocation_report import compute_pattern_changes, latest_year_frame
+from src.analytics.capital_allocation_report import (
+    compute_pattern_changes,
+    latest_year_frame,
+)
 
 
 def test_compute_pattern_changes_detects_migration() -> None:
@@ -10,7 +13,12 @@ def test_compute_pattern_changes_detects_migration() -> None:
         {
             "company_id": ["A", "A", "B", "B"],
             "year": ["2023-03", "2024-03", "2023-03", "2024-03"],
-            "pattern_label": ["Reinvestor", "Distress Signal", "Reinvestor", "Reinvestor"],
+            "pattern_label": [
+                "Reinvestor",
+                "Distress Signal",
+                "Reinvestor",
+                "Reinvestor",
+            ],
         }
     )
     changes = compute_pattern_changes(frame)
@@ -29,9 +37,6 @@ def test_compute_pattern_changes_empty_on_no_changes() -> None:
         }
     )
     assert compute_pattern_changes(frame).empty
-
-
-from src.analytics.capital_allocation_report import latest_year_frame
 
 
 def test_latest_year_frame_prefers_march_with_fallback() -> None:

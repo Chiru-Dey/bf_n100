@@ -6,7 +6,6 @@ import logging
 import re
 import sqlite3
 from pathlib import Path
-from typing import Optional
 
 import pandas as pd
 from reportlab.lib import colors
@@ -63,7 +62,7 @@ METRIC_COLUMNS = (
 )
 
 
-def _fmt(value: Optional[float], precision: int = 1) -> str:
+def _fmt(value: float | None, precision: int = 1) -> str:
     """Format a metric for table display, returning N/A when missing."""
     if value is None or pd.isna(value):
         return "N/A"
@@ -119,7 +118,10 @@ def build_sector_story(sector: str, frame: pd.DataFrame) -> list:
     story.append(Paragraph(f"Companies in sector: {len(members)}", SECTION))
     story.append(Spacer(1, 0.2 * cm))
     labels = [label for _, label in METRIC_COLUMNS]
-    data = [[Paragraph("Company", HEADER_CELL)] + [Paragraph(t, HEADER_CELL) for t in labels]]
+    data = [
+        [Paragraph("Company", HEADER_CELL)]
+        + [Paragraph(t, HEADER_CELL) for t in labels]
+    ]
     median_cells = ["Sector Median"] + [
         _fmt(members[column].median()) for column, _ in METRIC_COLUMNS
     ]

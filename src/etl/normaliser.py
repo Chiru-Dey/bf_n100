@@ -1,8 +1,9 @@
 from __future__ import annotations
 
+import logging
 import math
 import re
-import logging
+
 import pandas as pd
 
 logger = logging.getLogger(__name__)
@@ -105,6 +106,7 @@ def normalize_ticker(value: object) -> str:
     text = str(value).strip().upper()
     return text if text else MISSING
 
+
 PL_ROTATION_COLUMNS = (
     "expenses",
     "operating_profit",
@@ -143,9 +145,7 @@ def repair_pl_column_rotation(frame: pd.DataFrame) -> pd.DataFrame:
     repaired.loc[mask, "expenses"] = operating_profit[mask]
     repaired.loc[mask, "operating_profit"] = opm_percentage[mask]
     repaired.loc[mask, "opm_percentage"] = (
-        repaired.loc[mask, "operating_profit"]
-        / repaired.loc[mask, "sales"]
-        * 100.0
+        repaired.loc[mask, "operating_profit"] / repaired.loc[mask, "sales"] * 100.0
     ).round(2)
     repaired.loc[mask, "other_income"] = interest[mask]
     repaired.loc[mask, "interest"] = depreciation[mask]

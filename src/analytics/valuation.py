@@ -5,7 +5,6 @@ from __future__ import annotations
 import logging
 import sqlite3
 from pathlib import Path
-from typing import Optional
 
 import pandas as pd
 
@@ -35,9 +34,7 @@ SUMMARY_COLUMNS = (
 )
 
 
-def fcf_yield(
-    fcf_cr: Optional[float], market_cap_cr: Optional[float]
-) -> Optional[float]:
+def fcf_yield(fcf_cr: float | None, market_cap_cr: float | None) -> float | None:
     """Return free cash flow yield in percent, or None when market cap is zero."""
     if fcf_cr is None or market_cap_cr is None:
         return None
@@ -46,7 +43,7 @@ def fcf_yield(
     return float(fcf_cr) / float(market_cap_cr) * 100.0
 
 
-def valuation_flag(pe: Optional[float], sector_median_pe: Optional[float]) -> str:
+def valuation_flag(pe: float | None, sector_median_pe: float | None) -> str:
     """Return Caution, Discount or Fair from P/E versus sector median bands."""
     if pe is None or sector_median_pe is None:
         return FAIR

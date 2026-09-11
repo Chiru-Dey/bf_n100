@@ -25,7 +25,9 @@ if ratios.empty or cf.empty:
     st.stop()
 
 merged = ratios.merge(
-    cf[["company_id", "operating_activity", "investing_activity", "financing_activity"]],
+    cf[
+        ["company_id", "operating_activity", "investing_activity", "financing_activity"]
+    ],
     on="company_id",
     how="left",
 )
@@ -74,7 +76,13 @@ selected_pattern = st.selectbox(
     "Filter by Pattern", ["All"] + counts["pattern"].tolist(), key="cap_filter"
 )
 display_df = merged[
-    ["company_id", "broad_sector", "pattern", "free_cash_flow_cr", "composite_quality_score"]
+    [
+        "company_id",
+        "broad_sector",
+        "pattern",
+        "free_cash_flow_cr",
+        "composite_quality_score",
+    ]
 ]
 if selected_pattern != "All":
     display_df = display_df[display_df["pattern"] == selected_pattern]

@@ -21,6 +21,9 @@ def get_top_companies(df: pd.DataFrame, n: int = 5) -> pd.DataFrame:
 
 def build_sector_donut_data(df: pd.DataFrame) -> pd.DataFrame:
     """Return a DataFrame of sector counts for the Plotly donut chart."""
-    return df["broad_sector"].value_counts().reset_index(name="count").rename(
-        columns={"index": "broad_sector"}
+    return (
+        df["broad_sector"]
+        .value_counts()
+        .reset_index(name="count")
+        .rename(columns={"index": "broad_sector"})
     )

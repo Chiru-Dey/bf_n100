@@ -5,7 +5,6 @@ from __future__ import annotations
 import logging
 import sqlite3
 from pathlib import Path
-from typing import Optional
 
 import pandas as pd
 
@@ -55,11 +54,12 @@ SCHEMA_TYPES["revenue_cagr_5yr_flag"] = "TEXT"
 SCHEMA_TYPES["pat_cagr_5yr_flag"] = "TEXT"
 SCHEMA_TYPES["eps_cagr_5yr_flag"] = "TEXT"
 
+
 def book_value_per_share(
-    equity_capital: Optional[float],
-    reserves: Optional[float],
-    face_value: Optional[float],
-) -> Optional[float]:
+    equity_capital: float | None,
+    reserves: float | None,
+    face_value: float | None,
+) -> float | None:
     """Return book value per share, or None when equity capital is zero."""
     if equity_capital is None or reserves is None or face_value is None:
         return None
@@ -74,9 +74,7 @@ def _fcf_cagr_frame(cashflow_kpis: pd.DataFrame) -> pd.DataFrame:
     """Return five-year FCF CAGR per company-year from cash flow KPI rows."""
     rows: list[dict] = []
     for company_id, company in cashflow_kpis.groupby("company_id"):
-        series = (
-            company.set_index("year")["free_cash_flow_cr"].dropna().sort_index()
-        )
+        series = company.set_index("year")["free_cash_flow_cr"].dropna().sort_index()
         for year in company["year"]:
             value, _ = cagr_ending_at(series, year, 5)
             rows.append({"company_id": company_id, "year": year, "fcf_cagr_5yr": value})
@@ -158,6 +156,7 @@ def ensure_schema(conn: sqlite3.Connection) -> None:
                 f"ALTER TABLE financial_ratios ADD COLUMN {column} "
                 f"{SCHEMA_TYPES.get(column, 'REAL')}"
             )
+
 
 def write_financial_ratios(frame: pd.DataFrame, db_path: Path = DB_PATH) -> int:
     """Replace the financial_ratios table contents with the computed KPI frame."""

@@ -39,6 +39,7 @@ METRIC_MAP = {
     "de_declining": ("de_declining_flag", "=="),
 }
 
+
 def _latest_annual(frame: pd.DataFrame) -> pd.DataFrame:
     """Return latest March year per company, falling back to company max year."""
     march = frame[frame["year"].astype(str).str.endswith("-03")]
@@ -97,12 +98,12 @@ def build_screener_universe(db_path: Path = DB_PATH) -> pd.DataFrame:
     universe = universe.merge(
         latest_pl, on="company_id", how="left", suffixes=("", "_pl")
     )
-    
+
     if "net_profit" not in universe.columns:
         universe["net_profit"] = pd.NA
     if "sales" not in universe.columns:
         universe["sales"] = pd.NA
-        
+
     if "net_profit_pl" in universe.columns:
         universe["net_profit"] = universe["net_profit_pl"]
     if "sales_pl" in universe.columns:
@@ -112,11 +113,13 @@ def build_screener_universe(db_path: Path = DB_PATH) -> pd.DataFrame:
 
     mask_debt_free = universe["icr_label"] == DEBT_FREE_LABEL
     universe.loc[mask_debt_free, "interest_coverage"] = np.inf
-    
+
     return universe
 
 
-def apply_filters(frame: pd.DataFrame, filters: dict[str, float | bool]) -> pd.DataFrame:
+def apply_filters(
+    frame: pd.DataFrame, filters: dict[str, float | bool]
+) -> pd.DataFrame:
     """Apply threshold filters to the universe, honouring sector carve-outs."""
     if not filters:
         return frame.copy()
@@ -167,7 +170,7 @@ def run_preset(preset_name: str, db_path: Path = DB_PATH) -> pd.DataFrame:
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
     config = load_screener_config()
-    
+
     logger.info("Running all 6 presets...")
     for name in config.get("presets", {}):
         preset_results = run_preset(name)

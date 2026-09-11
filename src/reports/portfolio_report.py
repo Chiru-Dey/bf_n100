@@ -5,7 +5,6 @@ from __future__ import annotations
 import logging
 import sqlite3
 from pathlib import Path
-from typing import Optional
 
 import pandas as pd
 from reportlab.lib import colors
@@ -60,7 +59,7 @@ METRICS = [
 ]
 
 
-def _fmt(value: Optional[float], precision: int = 1) -> str:
+def _fmt(value: float | None, precision: int = 1) -> str:
     """Format a metric for display, returning N/A when missing."""
     if value is None or pd.isna(value):
         return "N/A"
@@ -68,7 +67,7 @@ def _fmt(value: Optional[float], precision: int = 1) -> str:
 
 
 def _trend_arrow(
-    latest: Optional[float], previous: Optional[float], invert: bool = False
+    latest: float | None, previous: float | None, invert: bool = False
 ) -> tuple[str, str]:
     """Return the trend arrow and hex colour based on YoY change."""
     if (
@@ -88,7 +87,7 @@ def _trend_arrow(
         if change_pct > 0.02:
             return "↓", "#C62828"
         return "→", "#757575"
-    
+
     if change_pct > 0.02:
         return "↑", "#2E7D32"
     if change_pct < -0.02:
@@ -103,9 +102,7 @@ def fetch_portfolio_data(db_path: Path = DB_PATH) -> pd.DataFrame:
         sectors = pd.read_sql_query(
             "SELECT company_id, broad_sector FROM sectors", conn
         )
-        companies = pd.read_sql_query(
-            "SELECT id, company_name FROM companies", conn
-        )
+        companies = pd.read_sql_query("SELECT id, company_name FROM companies", conn)
 
     ratios = ratios.sort_values(["company_id", "year"])
     rows: list[dict] = []

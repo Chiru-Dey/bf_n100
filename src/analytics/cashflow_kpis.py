@@ -4,8 +4,8 @@ from __future__ import annotations
 
 import logging
 import sqlite3
+from collections.abc import Sequence
 from pathlib import Path
-from typing import Optional, Sequence
 
 import pandas as pd
 
@@ -57,7 +57,7 @@ OUTPUT_COLUMNS = (
 )
 
 
-def _is_missing(*values: Optional[float]) -> bool:
+def _is_missing(*values: float | None) -> bool:
     """Return True when any supplied value is None or NaN."""
     return any(value is None or bool(pd.isna(value)) for value in values)
 
@@ -84,21 +84,21 @@ def resolve_cashflow_columns(frame: pd.DataFrame) -> dict[str, str]:
     return resolved
 
 
-def free_cash_flow(cfo: Optional[float], cfi: Optional[float]) -> Optional[float]:
+def free_cash_flow(cfo: float | None, cfi: float | None) -> float | None:
     """Return free cash flow as CFO plus investing flow, negative allowed."""
     if _is_missing(cfo, cfi):
         return None
     return float(cfo) + float(cfi)
 
 
-def cfo_pat_ratio(cfo: Optional[float], net_profit: Optional[float]) -> Optional[float]:
+def cfo_pat_ratio(cfo: float | None, net_profit: float | None) -> float | None:
     """Return CFO over PAT, or None when PAT is zero."""
     if _is_missing(cfo, net_profit) or net_profit == 0:
         return None
     return float(cfo) / float(net_profit)
 
 
-def cfo_quality_score(ratios: Sequence[Optional[float]]) -> Optional[float]:
+def cfo_quality_score(ratios: Sequence[float | None]) -> float | None:
     """Return trailing five-year mean CFO/PAT, None when current year PAT is zero."""
     if not ratios or ratios[-1] is None:
         return None
@@ -108,7 +108,7 @@ def cfo_quality_score(ratios: Sequence[Optional[float]]) -> Optional[float]:
     return sum(valid) / len(valid)
 
 
-def cfo_quality_label(score: Optional[float]) -> str:
+def cfo_quality_label(score: float | None) -> str:
     """Return the CFO quality band label for a five-year score."""
     if score is None or bool(pd.isna(score)):
         return NO_DATA
@@ -120,14 +120,14 @@ def cfo_quality_label(score: Optional[float]) -> str:
     return ACCRUAL_RISK
 
 
-def capex_intensity_pct(cfi: Optional[float], sales: Optional[float]) -> Optional[float]:
+def capex_intensity_pct(cfi: float | None, sales: float | None) -> float | None:
     """Return CapEx intensity as abs investing flow over sales in percent."""
     if _is_missing(cfi, sales) or sales == 0:
         return None
     return abs(float(cfi)) / float(sales) * 100.0
 
 
-def capex_label(intensity: Optional[float]) -> str:
+def capex_label(intensity: float | None) -> str:
     """Return the CapEx intensity band label for a percentage value."""
     if intensity is None or bool(pd.isna(intensity)):
         return NO_DATA
@@ -140,15 +140,15 @@ def capex_label(intensity: Optional[float]) -> str:
 
 
 def fcf_conversion_pct(
-    fcf: Optional[float], operating_profit: Optional[float]
-) -> Optional[float]:
+    fcf: float | None, operating_profit: float | None
+) -> float | None:
     """Return FCF conversion as FCF over operating profit in percent."""
     if _is_missing(fcf, operating_profit) or operating_profit == 0:
         return None
     return float(fcf) / float(operating_profit) * 100.0
 
 
-def cash_flow_sign(value: Optional[float]) -> str:
+def cash_flow_sign(value: float | None) -> str:
     """Return the +, - or ? sign label for a cash flow value."""
     if _is_missing(value):
         return UNKNOWN
@@ -156,10 +156,10 @@ def cash_flow_sign(value: Optional[float]) -> str:
 
 
 def classify_capital_allocation(
-    cfo: Optional[float],
-    cfi: Optional[float],
-    cff: Optional[float],
-    score: Optional[float] = None,
+    cfo: float | None,
+    cfi: float | None,
+    cff: float | None,
+    score: float | None = None,
 ) -> str:
     """Return the capital allocation pattern label from CFO/CFI/CFF signs."""
     if _is_missing(cfo, cfi, cff):
@@ -237,9 +237,7 @@ def write_capital_allocation(frame: pd.DataFrame, path: Path = OUTPUT_PATH) -> P
     """Write the capital allocation deliverable CSV and return its path."""
     path.parent.mkdir(parents=True, exist_ok=True)
     frame[list(OUTPUT_COLUMNS)].to_csv(path, index=False)
-    logger.info(
-        "Wrote capital allocation for %d company-years to %s", len(frame), path
-    )
+    logger.info("Wrote capital allocation for %d company-years to %s", len(frame), path)
     return path
 
 

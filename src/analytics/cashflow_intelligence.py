@@ -5,7 +5,6 @@ from __future__ import annotations
 import logging
 import sqlite3
 from pathlib import Path
-from typing import Optional
 
 import pandas as pd
 
@@ -53,7 +52,7 @@ ALERT_COLUMNS = (
 )
 
 
-def _round(value: Optional[float]) -> Optional[float]:
+def _round(value: float | None) -> float | None:
     """Round a value to two decimals, preserving None."""
     if value is None or pd.isna(value):
         return None
@@ -92,7 +91,7 @@ def fetch_intelligence_inputs(
     return histories, sector_map
 
 
-def cfo_quality(hist: pd.DataFrame) -> tuple[Optional[float], str]:
+def cfo_quality(hist: pd.DataFrame) -> tuple[float | None, str]:
     """Return the 5-year average CFO/PAT score and its quality label."""
     ratios = [
         cfo_pat_ratio(row["cfo"], row["net_profit"])
@@ -102,7 +101,7 @@ def cfo_quality(hist: pd.DataFrame) -> tuple[Optional[float], str]:
     return score, cfo_quality_label(score)
 
 
-def fcf_cagr_5yr(hist: pd.DataFrame) -> Optional[float]:
+def fcf_cagr_5yr(hist: pd.DataFrame) -> float | None:
     """Return 5-year FCF CAGR at the latest year, None when not computable."""
     series = hist.set_index("year")["fcf"].dropna().sort_index()
     if series.empty:

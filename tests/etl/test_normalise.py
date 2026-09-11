@@ -1,7 +1,12 @@
-from src.etl.normaliser import normalize_ticker, normalize_year
-from src.etl.normaliser import repair_pl_column_rotation
 import pandas as pd
 import pytest
+
+from src.etl.normaliser import (
+    normalize_ticker,
+    normalize_year,
+    repair_pl_column_rotation,
+)
+
 
 def _pl_row(**overrides: float) -> pd.DataFrame:
     row = {
@@ -18,6 +23,7 @@ def _pl_row(**overrides: float) -> pd.DataFrame:
     }
     row.update(overrides)
     return pd.DataFrame([row])
+
 
 class TestNormalizeYear:
     def test_year_mar23(self) -> None:
@@ -126,7 +132,7 @@ class TestNormalizeTicker:
 
     def test_ticker_nan(self) -> None:
         assert normalize_ticker(float("nan")) == "MISSING"
-    
+
     def _pl_row(**overrides: float) -> pd.DataFrame:
         row = {
             "company_id": "CIPLA",
@@ -143,7 +149,6 @@ class TestNormalizeTicker:
         row.update(overrides)
         return pd.DataFrame([row])
 
-
     def test_repair_pl_column_rotation_rotated_row(self) -> None:
         repaired = repair_pl_column_rotation(_pl_row())
         assert repaired.loc[0, "expenses"] == pytest.approx(19483.0)
@@ -152,8 +157,6 @@ class TestNormalizeTicker:
         assert repaired.loc[0, "other_income"] == pytest.approx(552.0)
         assert repaired.loc[0, "interest"] == pytest.approx(1051.0)
         assert repaired.loc[0, "depreciation"] == pytest.approx(90.0)
-
-
 
     def test_repair_pl_column_rotation_clean_row_unchanged(self) -> None:
         frame = _pl_row(
@@ -165,8 +168,6 @@ class TestNormalizeTicker:
             depreciation=1051.0,
         )
         pd.testing.assert_frame_equal(repair_pl_column_rotation(frame), frame)
-
-
 
     def test_repair_pl_column_rotation_bank_row_unchanged(self) -> None:
         frame = pd.DataFrame(

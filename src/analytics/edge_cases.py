@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import logging
 import sqlite3
-from datetime import datetime
+from datetime import UTC, datetime
 from pathlib import Path
 
 import pandas as pd
@@ -49,7 +49,9 @@ def fetch_latest_ratios(db_path: Path = DB_PATH) -> pd.DataFrame:
         companies = pd.read_sql_query(
             "SELECT id, roce_percentage, roe_percentage FROM companies", conn
         )
-        sectors = pd.read_sql_query("SELECT company_id, broad_sector FROM sectors", conn)
+        sectors = pd.read_sql_query(
+            "SELECT company_id, broad_sector FROM sectors", conn
+        )
     latest = ratios.sort_values("year").groupby("company_id").tail(1)
     merged = latest.merge(
         companies.rename(columns={"id": "company_id"}), on="company_id", how="left"
@@ -59,9 +61,7 @@ def fetch_latest_ratios(db_path: Path = DB_PATH) -> pd.DataFrame:
 
 def cross_check_returns(frame: pd.DataFrame) -> list[dict]:
     """Return ROCE and ROE cross-check anomalies exceeding the configured tolerance."""
-    tolerance = float(
-        load_ratio_config()["edge_cases"]["cross_check_tolerance_pct"]
-    )
+    tolerance = float(load_ratio_config()["edge_cases"]["cross_check_tolerance_pct"])
     records: list[dict] = []
     pairs = (
         ("return_on_capital_employed_pct", "roce_percentage"),
@@ -149,7 +149,9 @@ def financials_company_count(db_path: Path = DB_PATH) -> int:
     """Return the number of companies in the Financials broad sector."""
     with sqlite3.connect(db_path) as conn:
         sectors = pd.read_sql_query("SELECT broad_sector FROM sectors", conn)
-    return int((sectors["broad_sector"] == load_ratio_config()["financials_sector"]).sum())
+    return int(
+        (sectors["broad_sector"] == load_ratio_config()["financials_sector"]).sum()
+    )
 
 
 def write_ratio_edge_cases(
@@ -161,7 +163,7 @@ def write_ratio_edge_cases(
     path: Path = EDGE_LOG_PATH,
 ) -> Path:
     """Write the ratio edge case log deliverable and return its path."""
-    stamp = datetime.now().isoformat(timespec="seconds")
+    stamp = datetime.now(UTC).isoformat(timespec="seconds")
     lines = [
         f"Nifty 100 ratio engine edge case log - generated {stamp}",
         "",

@@ -1,5 +1,6 @@
-import streamlit as st
 import plotly.express as px
+import streamlit as st
+
 from src.dashboard.utils.db import get_all_ratios_latest, get_pl_latest
 
 st.title("🏭 Sector Analysis")
@@ -12,14 +13,19 @@ if df.empty:
 df = df.merge(get_pl_latest(), on="company_id", how="left", suffixes=("", "_pl"))
 
 st.subheader("Sector Medians")
-medians = df.groupby("broad_sector").agg(
-    roe_median=("return_on_equity_pct", "median"),
-    roce_median=("return_on_capital_employed_pct", "median"),
-    de_median=("debt_to_equity", "median"),
-    npm_median=("net_profit_margin_pct", "median"),
-    composite_median=("composite_quality_score", "median"),
-    sales_median=("sales", "median"),
-).round(2).reset_index()
+medians = (
+    df.groupby("broad_sector")
+    .agg(
+        roe_median=("return_on_equity_pct", "median"),
+        roce_median=("return_on_capital_employed_pct", "median"),
+        de_median=("debt_to_equity", "median"),
+        npm_median=("net_profit_margin_pct", "median"),
+        composite_median=("composite_quality_score", "median"),
+        sales_median=("sales", "median"),
+    )
+    .round(2)
+    .reset_index()
+)
 st.dataframe(medians, width="stretch", hide_index=True)
 
 st.subheader("Sector Bubble Chart (ROE vs ROCE)")

@@ -7,7 +7,6 @@ import os
 import sqlite3
 from functools import lru_cache
 from pathlib import Path
-from typing import Optional
 
 import pandas as pd
 import yaml
@@ -37,7 +36,7 @@ def load_ratio_config(path: str = str(DEFAULT_CONFIG_PATH)) -> dict:
         return yaml.safe_load(handle)
 
 
-def _is_missing(*values: Optional[float]) -> bool:
+def _is_missing(*values: float | None) -> bool:
     """Return True when any supplied value is None or NaN."""
     return any(value is None or bool(pd.isna(value)) for value in values)
 
@@ -47,7 +46,7 @@ def is_financials_sector(broad_sector: str) -> bool:
     return broad_sector == load_ratio_config()["financials_sector"]
 
 
-def net_profit_margin(net_profit: float, sales: float) -> Optional[float]:
+def net_profit_margin(net_profit: float, sales: float) -> float | None:
     """Return net profit margin in percent, or None when sales is zero."""
     if _is_missing(net_profit, sales) or sales == 0:
         return None
@@ -57,11 +56,11 @@ def net_profit_margin(net_profit: float, sales: float) -> Optional[float]:
 def operating_profit_margin(
     operating_profit: float,
     sales: float,
-    source_opm_pct: Optional[float] = None,
-    tolerance_pct: Optional[float] = None,
+    source_opm_pct: float | None = None,
+    tolerance_pct: float | None = None,
     company_id: str = "",
     year: str = "",
-) -> Optional[float]:
+) -> float | None:
     """Return computed operating margin and log source divergence above tolerance."""
     if _is_missing(operating_profit, sales) or sales == 0:
         return None
@@ -102,7 +101,7 @@ def return_on_equity(
     net_profit: float,
     equity_capital: float,
     reserves: float,
-) -> Optional[float]:
+) -> float | None:
     """Return return on equity in percent, or None when total equity is not positive."""
     if _is_missing(net_profit, equity_capital, reserves):
         return None
@@ -118,9 +117,11 @@ def return_on_capital_employed(
     equity_capital: float,
     reserves: float,
     borrowings: float,
-) -> Optional[float]:
+) -> float | None:
     """Return ROCE in percent using EBIT over capital employed, None if not positive."""
-    if _is_missing(operating_profit, depreciation, equity_capital, reserves, borrowings):
+    if _is_missing(
+        operating_profit, depreciation, equity_capital, reserves, borrowings
+    ):
         return None
     capital_employed = equity_capital + reserves + borrowings
     if capital_employed <= 0:
@@ -129,7 +130,7 @@ def return_on_capital_employed(
     return ebit / capital_employed * 100.0
 
 
-def return_on_assets(net_profit: float, total_assets: float) -> Optional[float]:
+def return_on_assets(net_profit: float, total_assets: float) -> float | None:
     """Return return on assets in percent, or None when total assets is zero."""
     if _is_missing(net_profit, total_assets) or total_assets == 0:
         return None
@@ -138,8 +139,8 @@ def return_on_assets(net_profit: float, total_assets: float) -> Optional[float]:
 
 def roce_benchmark_pct(
     broad_sector: str,
-    sector_median_roce_pct: Optional[float],
-) -> Optional[float]:
+    sector_median_roce_pct: float | None,
+) -> float | None:
     """Return sector median benchmark for Financials else the absolute threshold."""
     if is_financials_sector(broad_sector):
         return sector_median_roce_pct
@@ -147,9 +148,9 @@ def roce_benchmark_pct(
 
 
 def evaluate_roce(
-    roce_pct: Optional[float],
+    roce_pct: float | None,
     broad_sector: str,
-    sector_median_roce_pct: Optional[float],
+    sector_median_roce_pct: float | None,
 ) -> str:
     """Return the ROCE benchmark label for a company within its sector context."""
     benchmark = roce_benchmark_pct(broad_sector, sector_median_roce_pct)
@@ -162,7 +163,7 @@ def debt_to_equity(
     borrowings: float,
     equity_capital: float,
     reserves: float,
-) -> Optional[float]:
+) -> float | None:
     """Return D/E ratio, 0.0 for debt-free companies, None if equity not positive."""
     if _is_missing(borrowings, equity_capital, reserves):
         return None
@@ -174,7 +175,7 @@ def debt_to_equity(
     return borrowings / equity
 
 
-def high_leverage_flag(de_ratio: Optional[float], broad_sector: str) -> bool:
+def high_leverage_flag(de_ratio: float | None, broad_sector: str) -> bool:
     """Return True when D/E exceeds the threshold for a non-Financials company."""
     if _is_missing(de_ratio) or is_financials_sector(broad_sector):
         return False
@@ -184,9 +185,9 @@ def high_leverage_flag(de_ratio: Optional[float], broad_sector: str) -> bool:
 
 def interest_coverage(
     operating_profit: float,
-    other_income: Optional[float],
+    other_income: float | None,
     interest: float,
-) -> Optional[float]:
+) -> float | None:
     """Return interest coverage ratio, or None when interest is zero."""
     if _is_missing(operating_profit, interest) or interest == 0:
         return None
@@ -194,14 +195,14 @@ def interest_coverage(
     return (float(operating_profit) + income) / float(interest)
 
 
-def icr_label(interest: Optional[float]) -> str:
+def icr_label(interest: float | None) -> str:
     """Return the Debt Free display label when interest is zero, else empty string."""
     if not _is_missing(interest) and interest == 0:
         return DEBT_FREE_LABEL
     return ""
 
 
-def icr_warning_flag(icr: Optional[float]) -> bool:
+def icr_warning_flag(icr: float | None) -> bool:
     """Return True when interest coverage falls below the warning threshold."""
     if _is_missing(icr):
         return False
@@ -209,7 +210,7 @@ def icr_warning_flag(icr: Optional[float]) -> bool:
     return bool(icr < threshold)
 
 
-def net_debt(borrowings: float, investments: Optional[float]) -> Optional[float]:
+def net_debt(borrowings: float, investments: float | None) -> float | None:
     """Return net debt as borrowings less investments, missing investments as zero."""
     if _is_missing(borrowings):
         return None
@@ -217,7 +218,7 @@ def net_debt(borrowings: float, investments: Optional[float]) -> Optional[float]
     return float(borrowings) - invested
 
 
-def asset_turnover(sales: float, total_assets: float) -> Optional[float]:
+def asset_turnover(sales: float, total_assets: float) -> float | None:
     """Return asset turnover ratio, or None when total assets is zero."""
     if _is_missing(sales, total_assets) or total_assets == 0:
         return None

@@ -1,0 +1,5 @@
+company_id,metric,value,z_score,sector,sector_mean,sector_std
+INDIGO,return_on_equity_pct,892.57,3.47,Consumer Discretionary,86.72,232.1
+INDIGO,operating_profit_margin_pct,76.3,3.19,Consumer Discretionary,20.37,17.53
+ADANIGREEN,debt_to_equity,6.6,3.14,Energy,1.46,1.63
+PNB,return_on_equity_pct,61.32,3.33,Financials,18.87,12.74

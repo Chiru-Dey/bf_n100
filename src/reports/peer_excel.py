@@ -168,7 +168,11 @@ def export_peer_comparison_excel(
                         pass
 
                 if isinstance(value, float) and not pd.isna(value):
-                    if "Pct" in col_name or col_name in ["D/E", "Asset Turnover", "ICR"]:
+                    if "Pct" in col_name or col_name in [
+                        "D/E",
+                        "Asset Turnover",
+                        "ICR",
+                    ]:
                         cell.number_format = "0.00"
                     else:
                         cell.number_format = "#,##0.00"

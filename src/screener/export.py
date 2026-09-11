@@ -10,7 +10,12 @@ from openpyxl import Workbook
 from openpyxl.styles import PatternFill
 from openpyxl.utils.dataframe import dataframe_to_rows
 
-from src.screener.engine import FINANCIALS_SECTOR, METRIC_MAP, load_screener_config, run_preset
+from src.screener.engine import (
+    FINANCIALS_SECTOR,
+    METRIC_MAP,
+    load_screener_config,
+    run_preset,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -53,8 +58,8 @@ def _check_threshold(
     if key not in METRIC_MAP:
         return None
     if key == "de_max" and sector == FINANCIALS_SECTOR:
-        return None 
-        
+        return None
+
     _, op = METRIC_MAP[key]
     if op == ">=":
         return float(value) >= threshold
@@ -69,7 +74,7 @@ def export_screener_excel(path: Path = OUTPUT_PATH) -> Path:
     """Generate the multi-sheet screener output Excel file with colour-coded cells."""
     config = load_screener_config()
     presets = config.get("presets", {})
-    
+
     wb = Workbook()
     if wb.active:
         wb.remove(wb.active)
@@ -78,23 +83,34 @@ def export_screener_excel(path: Path = OUTPUT_PATH) -> Path:
         df = run_preset(preset_name)
         if df.empty:
             continue
-            
+
         cols = [c for c in EXPORT_COLUMNS if c in df.columns]
         sheet_df = df[cols].copy()
-        
+
         ws = wb.create_sheet(title=preset_name[:31])
-        
-        for r_idx, row in enumerate(dataframe_to_rows(sheet_df, index=False, header=True), 1):
+
+        for r_idx, row in enumerate(
+            dataframe_to_rows(sheet_df, index=False, header=True), 1
+        ):
             for c_idx, value in enumerate(row, 1):
                 cell = ws.cell(row=r_idx, column=c_idx, value=value)
-                
+
                 if r_idx > 1:
                     col_name = cols[c_idx - 1]
-                    sector = sheet_df.iloc[r_idx - 2]["broad_sector"] if "broad_sector" in sheet_df.columns else ""
-                    
+                    sector = (
+                        sheet_df.iloc[r_idx - 2]["broad_sector"]
+                        if "broad_sector" in sheet_df.columns
+                        else ""
+                    )
+
                     for filter_key, threshold in filters.items():
-                        if filter_key in METRIC_MAP and METRIC_MAP[filter_key][0] == col_name:
-                            passes = _check_threshold(value, filter_key, threshold, sector)
+                        if (
+                            filter_key in METRIC_MAP
+                            and METRIC_MAP[filter_key][0] == col_name
+                        ):
+                            passes = _check_threshold(
+                                value, filter_key, threshold, sector
+                            )
                             if passes is True:
                                 cell.fill = GREEN_FILL
                             elif passes is False:
@@ -103,7 +119,9 @@ def export_screener_excel(path: Path = OUTPUT_PATH) -> Path:
 
         for col_idx, col_name in enumerate(cols, 1):
             max_len = max(len(str(col_name)), 12)
-            ws.column_dimensions[ws.cell(row=1, column=col_idx).column_letter].width = max_len + 2
+            ws.column_dimensions[ws.cell(row=1, column=col_idx).column_letter].width = (
+                max_len + 2
+            )
 
     path.parent.mkdir(parents=True, exist_ok=True)
     wb.save(path)

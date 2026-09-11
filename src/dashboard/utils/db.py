@@ -101,7 +101,8 @@ def get_valuation(ticker: str) -> pd.DataFrame:
             conn,
             params=(ticker,),
         )
-        
+
+
 @st.cache_data(ttl=600)
 def get_all_ratios_latest() -> pd.DataFrame:
     """Return latest annual ratios per company with sector, March-preferred."""
@@ -124,10 +125,13 @@ def get_all_ratios_latest() -> pd.DataFrame:
         latest = pd.concat([latest, fallback])
     return latest
 
+
 @st.cache_data(ttl=600)
 def get_screener_universe() -> pd.DataFrame:
     from src.screener.engine import build_screener_universe
+
     return build_screener_universe()
+
 
 @st.cache_data(ttl=600)
 def get_cf_latest() -> pd.DataFrame:
@@ -139,6 +143,8 @@ def get_cf_latest() -> pd.DataFrame:
             "ON c1.company_id = c2.company_id AND c1.year = c2.max_year",
             conn,
         )
+
+
 @st.cache_data(ttl=600)
 def get_pl_latest() -> pd.DataFrame:
     """Return the latest P&L row per company."""
@@ -151,6 +157,7 @@ def get_pl_latest() -> pd.DataFrame:
             "ON p1.company_id = p2.company_id AND p1.year = p2.max_year",
             conn,
         )
+
 
 @st.cache_data(ttl=600)
 def get_cfo_pat_scores() -> pd.DataFrame:
@@ -182,9 +189,11 @@ def get_cfo_pat_scores() -> pd.DataFrame:
                 {
                     "company_id": company,
                     "year": row["year"],
-                    "cfo_quality_score": sum(window) / len(window)
-                    if pd.notna(current) and window
-                    else None,
+                    "cfo_quality_score": (
+                        sum(window) / len(window)
+                        if pd.notna(current) and window
+                        else None
+                    ),
                 }
             )
     return pd.DataFrame(scores)

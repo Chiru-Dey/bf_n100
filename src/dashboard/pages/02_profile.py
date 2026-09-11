@@ -14,7 +14,9 @@ if companies.empty:
     st.stop()
 
 tickers = sorted(companies["id"].tolist())
-selected_ticker = st.sidebar.selectbox("Select a Company", tickers, index=tickers.index("TCS") if "TCS" in tickers else 0)
+selected_ticker = st.sidebar.selectbox(
+    "Select a Company", tickers, index=tickers.index("TCS") if "TCS" in tickers else 0
+)
 
 st.header(selected_ticker)
 
@@ -31,14 +33,25 @@ st.subheader("Latest KPI Snapshot")
 col1, col2, col3, col4 = st.columns(4)
 col1.metric("ROE (%)", format_kpi_tile(latest.get("return_on_equity_pct")))
 col2.metric("ROCE (%)", format_kpi_tile(latest.get("return_on_capital_employed_pct")))
-col3.metric("Debt / Equity", format_kpi_tile(latest.get("debt_to_equity"), suffix="", precision=2))
-col4.metric("Asset Turnover", format_kpi_tile(latest.get("asset_turnover"), suffix="x", precision=2))
+col3.metric(
+    "Debt / Equity",
+    format_kpi_tile(latest.get("debt_to_equity"), suffix="", precision=2),
+)
+col4.metric(
+    "Asset Turnover",
+    format_kpi_tile(latest.get("asset_turnover"), suffix="x", precision=2),
+)
 
 col5, col6, col7, col8 = st.columns(4)
 col5.metric("OPM (%)", format_kpi_tile(latest.get("operating_profit_margin_pct")))
 col6.metric("NPM (%)", format_kpi_tile(latest.get("net_profit_margin_pct")))
-col7.metric("FCF (Cr)", format_kpi_tile(latest.get("free_cash_flow_cr"), suffix="", precision=0))
-col8.metric("Composite Score", format_kpi_tile(latest.get("composite_quality_score"), suffix="/100", precision=1))
+col7.metric(
+    "FCF (Cr)", format_kpi_tile(latest.get("free_cash_flow_cr"), suffix="", precision=0)
+)
+col8.metric(
+    "Composite Score",
+    format_kpi_tile(latest.get("composite_quality_score"), suffix="/100", precision=1),
+)
 
 st.subheader("📊 10-Year Financial Trends")
 
@@ -60,7 +73,7 @@ if not pl.empty:
         markers=True,
     )
     st.plotly_chart(fig_margins, width="stretch")
-    
+
     fig_returns = px.line(
         ratios,
         x="year",

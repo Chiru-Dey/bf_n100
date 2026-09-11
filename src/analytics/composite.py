@@ -2,13 +2,10 @@
 
 from __future__ import annotations
 
-from typing import Optional
-
 import numpy as np
 import pandas as pd
 
 from src.analytics.ratios import DEBT_FREE_LABEL, load_ratio_config
-
 
 WINSORISED_METRICS = (
     ("return_on_equity_pct", "roe"),
@@ -34,9 +31,7 @@ def winsorised_scale(values: pd.Series) -> pd.Series:
     return (clipped - p10) / (p90 - p10) * 100.0
 
 
-def piecewise_score(
-    value: Optional[float], anchors: list[list[float]]
-) -> Optional[float]:
+def piecewise_score(value: float | None, anchors: list[list[float]]) -> float | None:
     """Return an interpolated 0-100 score from piecewise linear anchors."""
     if value is None or bool(pd.isna(value)):
         return None

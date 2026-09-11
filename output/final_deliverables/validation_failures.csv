@@ -1,0 +1,1025 @@
+rule_id,table,company_id,year,field,issue,severity
+DQ-02,profitandloss,ADANIPORTS,2013-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,profitandloss,ADANIPORTS,2014-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,profitandloss,ADANIPORTS,2015-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,profitandloss,ADANIPORTS,2016-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,profitandloss,ADANIPORTS,2017-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,profitandloss,ADANIPORTS,2018-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,profitandloss,ADANIPORTS,2019-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,profitandloss,ADANIPORTS,2020-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,profitandloss,ADANIPORTS,2021-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,profitandloss,ADANIPORTS,2022-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,profitandloss,ADANIPORTS,2023-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,profitandloss,ADANIPORTS,2024-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,profitandloss,ADANIPORTS,PARSE_ERROR,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,profitandloss,AMBUJACEM,PARSE_ERROR,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,profitandloss,HCLTECH,PARSE_ERROR,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,profitandloss,SHREECEM,PARSE_ERROR,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,ASIANPAINT,2013-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,ASIANPAINT,2014-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,ASIANPAINT,2015-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,ASIANPAINT,2016-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,ASIANPAINT,2017-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,ASIANPAINT,2018-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,ASIANPAINT,2019-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,ASIANPAINT,2020-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,ASIANPAINT,2021-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,ASIANPAINT,2022-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,ASIANPAINT,2023-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,ASIANPAINT,2024-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,ASIANPAINT,2024-09,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2013-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2014-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2015-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2016-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2017-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2018-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2019-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2020-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2021-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2022-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2023-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2024-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2013-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2014-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2015-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2016-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2017-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2018-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2019-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2020-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2021-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2022-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2023-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2024-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2013-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2014-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2015-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2016-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2017-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2018-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2019-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2020-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2021-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2022-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2023-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2024-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2013-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2014-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2015-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2016-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2017-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2018-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2019-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2020-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2021-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2022-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2023-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,PNB,2024-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,POWERGRID,2013-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,POWERGRID,2014-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,POWERGRID,2015-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,POWERGRID,2016-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,POWERGRID,2017-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,POWERGRID,2018-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,POWERGRID,2019-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,POWERGRID,2020-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,POWERGRID,2021-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,POWERGRID,2022-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,POWERGRID,2023-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,POWERGRID,2024-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,POWERGRID,2024-09,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,TECHM,2013-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,TECHM,2014-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,TECHM,2015-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,TECHM,2016-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,TECHM,2017-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,TECHM,2018-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,TECHM,2019-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,TECHM,2020-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,TECHM,2021-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,TECHM,2022-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,TECHM,2023-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,TECHM,2024-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,balancesheet,TECHM,2024-09,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,cashflow,TCS,2013-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,cashflow,TCS,2014-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,cashflow,TCS,2015-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,cashflow,TCS,2016-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,cashflow,TCS,2017-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,cashflow,TCS,2018-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,cashflow,TCS,2019-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,cashflow,TCS,2020-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,cashflow,TCS,2021-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,cashflow,TCS,2022-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,cashflow,TCS,2023-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,cashflow,TCS,2024-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,cashflow,ABB,2014-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,cashflow,ABB,2015-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,cashflow,ABB,2016-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,cashflow,ABB,2017-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,cashflow,ABB,2018-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,cashflow,ABB,2019-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,cashflow,ABB,2020-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,cashflow,ABB,2021-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,cashflow,ABB,2022-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,cashflow,ABB,2023-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,cashflow,ABB,2024-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,cashflow,BAJAJ-AUTO,2013-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,cashflow,BAJAJ-AUTO,2014-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,cashflow,BAJAJ-AUTO,2015-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,cashflow,BAJAJ-AUTO,2016-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,cashflow,BAJAJ-AUTO,2017-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,cashflow,BAJAJ-AUTO,2018-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,cashflow,BAJAJ-AUTO,2019-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,cashflow,BAJAJ-AUTO,2020-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,cashflow,BAJAJ-AUTO,2021-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,cashflow,BAJAJ-AUTO,2022-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,cashflow,BAJAJ-AUTO,2023-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-02,cashflow,BAJAJ-AUTO,2024-03,"company_id,year","duplicate (company_id, year) key",CRITICAL
+DQ-03,profitandloss,ULTRACEMCO,2013-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,ULTRACEMCO,2014-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,ULTRACEMCO,2015-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,ULTRACEMCO,2016-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,ULTRACEMCO,2017-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,ULTRACEMCO,2018-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,ULTRACEMCO,2019-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,ULTRACEMCO,2020-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,ULTRACEMCO,2021-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,ULTRACEMCO,2022-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,ULTRACEMCO,2023-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,ULTRACEMCO,2024-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,ULTRACEMCO,PARSE_ERROR,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,UNIONBANK,2013-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,UNIONBANK,2014-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,UNIONBANK,2015-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,UNIONBANK,2016-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,UNIONBANK,2017-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,UNIONBANK,2018-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,UNIONBANK,2019-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,UNIONBANK,2020-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,UNIONBANK,2021-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,UNIONBANK,2022-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,UNIONBANK,2023-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,UNIONBANK,2024-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,UNIONBANK,PARSE_ERROR,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,UNITDSPR,2013-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,UNITDSPR,2014-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,UNITDSPR,2015-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,UNITDSPR,2016-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,UNITDSPR,2017-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,UNITDSPR,2018-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,UNITDSPR,2019-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,UNITDSPR,2020-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,UNITDSPR,2021-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,UNITDSPR,2022-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,UNITDSPR,2023-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,UNITDSPR,2024-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,UNITDSPR,PARSE_ERROR,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,VBL,2012-12,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,VBL,2013-12,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,VBL,2014-12,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,VBL,2015-12,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,VBL,2016-12,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,VBL,2017-12,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,VBL,2018-12,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,VBL,2019-12,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,VBL,2020-12,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,VBL,2021-12,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,VBL,2022-12,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,VBL,2023-12,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,VBL,PARSE_ERROR,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,VEDL,2013-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,VEDL,2014-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,VEDL,2015-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,VEDL,2016-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,VEDL,2017-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,VEDL,2018-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,VEDL,2019-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,VEDL,2020-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,VEDL,2021-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,VEDL,2022-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,VEDL,2023-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,VEDL,2024-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,VEDL,PARSE_ERROR,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,WIPRO,2013-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,WIPRO,2014-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,WIPRO,2015-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,WIPRO,2016-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,WIPRO,2017-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,WIPRO,2018-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,WIPRO,2019-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,WIPRO,2020-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,WIPRO,2021-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,WIPRO,2022-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,WIPRO,2023-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,WIPRO,2024-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,WIPRO,PARSE_ERROR,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,ZOMATO,2018-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,ZOMATO,2019-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,ZOMATO,2020-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,ZOMATO,2021-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,ZOMATO,2022-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,ZOMATO,2023-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,ZOMATO,2024-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,ZOMATO,PARSE_ERROR,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,ZYDUSLIFE,2013-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,ZYDUSLIFE,2014-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,ZYDUSLIFE,2015-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,ZYDUSLIFE,2016-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,ZYDUSLIFE,2017-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,ZYDUSLIFE,2018-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,ZYDUSLIFE,2019-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,ZYDUSLIFE,2020-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,ZYDUSLIFE,2021-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,ZYDUSLIFE,2022-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,ZYDUSLIFE,2023-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,ZYDUSLIFE,2024-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,profitandloss,ZYDUSLIFE,PARSE_ERROR,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,ZYDUSLIFE,2013-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,ZYDUSLIFE,2014-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,ZYDUSLIFE,2015-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,ZYDUSLIFE,2016-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,ZYDUSLIFE,2017-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,ZYDUSLIFE,2018-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,ZYDUSLIFE,2019-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,ZYDUSLIFE,2020-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,ZYDUSLIFE,2021-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,ZYDUSLIFE,2022-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,ZYDUSLIFE,2023-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,ZYDUSLIFE,2024-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,ZYDUSLIFE,PARSE_ERROR,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,ZOMATO,2018-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,ZOMATO,2019-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,ZOMATO,2020-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,ZOMATO,2021-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,ZOMATO,2022-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,ZOMATO,2023-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,ZOMATO,2024-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,ZOMATO,PARSE_ERROR,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,WIPRO,2013-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,WIPRO,2014-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,WIPRO,2015-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,WIPRO,2016-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,WIPRO,2017-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,WIPRO,2018-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,WIPRO,2019-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,WIPRO,2020-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,WIPRO,2021-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,WIPRO,2022-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,WIPRO,2023-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,WIPRO,2024-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,WIPRO,PARSE_ERROR,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,VEDL,2013-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,VEDL,2014-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,VEDL,2015-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,VEDL,2016-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,VEDL,2017-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,VEDL,2018-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,VEDL,2019-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,VEDL,2020-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,VEDL,2021-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,VEDL,2022-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,VEDL,2023-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,VEDL,2024-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,VEDL,PARSE_ERROR,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,UNITDSPR,2013-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,UNITDSPR,2014-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,UNITDSPR,2015-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,UNITDSPR,2016-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,UNITDSPR,2017-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,UNITDSPR,2018-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,UNITDSPR,2019-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,UNITDSPR,2020-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,UNITDSPR,2021-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,UNITDSPR,2022-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,UNITDSPR,2023-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,UNITDSPR,2024-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,UNITDSPR,PARSE_ERROR,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,UNIONBANK,2013-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,UNIONBANK,2014-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,UNIONBANK,2015-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,UNIONBANK,2016-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,UNIONBANK,2017-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,UNIONBANK,2018-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,UNIONBANK,2019-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,UNIONBANK,2020-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,UNIONBANK,2021-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,UNIONBANK,2022-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,UNIONBANK,2023-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,UNIONBANK,2024-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,ULTRACEMCO,2013-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,ULTRACEMCO,2014-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,ULTRACEMCO,2015-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,ULTRACEMCO,2016-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,ULTRACEMCO,2017-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,ULTRACEMCO,2018-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,ULTRACEMCO,2019-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,ULTRACEMCO,2020-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,ULTRACEMCO,2021-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,ULTRACEMCO,2022-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,ULTRACEMCO,2023-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,ULTRACEMCO,2024-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,balancesheet,ULTRACEMCO,2024-09,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,AGTL,2018-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,AGTL,2019-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,AGTL,2020-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,AGTL,2021-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,AGTL,2022-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,AGTL,2023-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,AGTL,2024-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,ULTRACEMCO,2013-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,ULTRACEMCO,2014-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,ULTRACEMCO,2015-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,ULTRACEMCO,2016-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,ULTRACEMCO,2017-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,ULTRACEMCO,2018-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,ULTRACEMCO,2019-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,ULTRACEMCO,2020-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,ULTRACEMCO,2021-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,ULTRACEMCO,2022-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,ULTRACEMCO,2023-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,ULTRACEMCO,2024-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,UNIONBANK,2013-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,UNIONBANK,2014-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,UNIONBANK,2015-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,UNIONBANK,2016-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,UNIONBANK,2017-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,UNIONBANK,2018-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,UNIONBANK,2019-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,UNIONBANK,2020-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,UNIONBANK,2021-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,UNIONBANK,2022-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,UNIONBANK,2023-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,UNIONBANK,2024-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,UNITDSPR,2013-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,UNITDSPR,2014-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,UNITDSPR,2015-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,UNITDSPR,2016-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,UNITDSPR,2017-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,UNITDSPR,2018-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,UNITDSPR,2019-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,UNITDSPR,2020-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,UNITDSPR,2021-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,UNITDSPR,2022-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,UNITDSPR,2023-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,UNITDSPR,2024-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,VBL,2012-12,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,VBL,2013-12,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,VBL,2014-12,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,VBL,2015-12,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,VBL,2016-12,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,VBL,2017-12,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,VBL,2018-12,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,VBL,2019-12,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,VBL,2020-12,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,VBL,2021-12,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,VBL,2022-12,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,VBL,2023-12,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,VEDL,2013-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,VEDL,2014-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,VEDL,2015-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,VEDL,2016-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,VEDL,2017-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,VEDL,2018-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,VEDL,2019-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,VEDL,2020-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,VEDL,2021-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,VEDL,2022-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,VEDL,2023-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,VEDL,2024-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,WIPRO,2013-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,WIPRO,2014-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,WIPRO,2015-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,WIPRO,2016-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,WIPRO,2017-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,WIPRO,2018-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,WIPRO,2019-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,WIPRO,2020-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,WIPRO,2021-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,WIPRO,2022-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,WIPRO,2023-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,WIPRO,2024-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,ZOMATO,2020-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,ZOMATO,2021-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,ZOMATO,2022-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,ZOMATO,2023-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,ZOMATO,2024-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,ZYDUSLIFE,2013-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,ZYDUSLIFE,2014-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,ZYDUSLIFE,2015-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,ZYDUSLIFE,2016-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,ZYDUSLIFE,2017-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,ZYDUSLIFE,2018-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,ZYDUSLIFE,2019-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,ZYDUSLIFE,2020-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,ZYDUSLIFE,2021-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,ZYDUSLIFE,2022-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,ZYDUSLIFE,2023-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,cashflow,ZYDUSLIFE,2024-03,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,analysis,WIPRO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,analysis,WIPRO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,analysis,WIPRO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,analysis,WIPRO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ULTRACEMCO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ULTRACEMCO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ULTRACEMCO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ULTRACEMCO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ULTRACEMCO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ULTRACEMCO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ULTRACEMCO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ULTRACEMCO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ULTRACEMCO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ULTRACEMCO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ULTRACEMCO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ULTRACEMCO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ULTRACEMCO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ULTRACEMCO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ULTRACEMCO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ULTRACEMCO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,UNIONBANK,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,UNIONBANK,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,UNIONBANK,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,UNIONBANK,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,UNIONBANK,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,UNIONBANK,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,UNIONBANK,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,UNIONBANK,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,UNIONBANK,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,UNIONBANK,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,UNIONBANK,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,UNIONBANK,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,UNIONBANK,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,UNIONBANK,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,UNIONBANK,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,UNIONBANK,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,UNITDSPR,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,UNITDSPR,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,UNITDSPR,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,UNITDSPR,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,UNITDSPR,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,UNITDSPR,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,UNITDSPR,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,UNITDSPR,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,UNITDSPR,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,UNITDSPR,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,UNITDSPR,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,UNITDSPR,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,UNITDSPR,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,UNITDSPR,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,UNITDSPR,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,UNITDSPR,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,VBL,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,VBL,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,VBL,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,VBL,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,VBL,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,VBL,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,VBL,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,VBL,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,VBL,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,VBL,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,VBL,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,VBL,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,VBL,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,VBL,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,VBL,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,VBL,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,VEDL,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,VEDL,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,VEDL,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,VEDL,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,VEDL,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,VEDL,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,VEDL,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,VEDL,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,VEDL,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,VEDL,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,VEDL,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,VEDL,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,VEDL,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,VEDL,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,VEDL,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,VEDL,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,WIPRO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,WIPRO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,WIPRO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,WIPRO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,WIPRO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,WIPRO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,WIPRO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,WIPRO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,WIPRO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,WIPRO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,WIPRO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,WIPRO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,WIPRO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,WIPRO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,WIPRO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,WIPRO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ZOMATO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ZOMATO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ZOMATO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ZOMATO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ZOMATO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ZOMATO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ZOMATO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ZOMATO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ZOMATO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ZOMATO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ZOMATO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ZOMATO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ZOMATO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ZOMATO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ZOMATO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ZOMATO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ZYDUSLIFE,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ZYDUSLIFE,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ZYDUSLIFE,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ZYDUSLIFE,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ZYDUSLIFE,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ZYDUSLIFE,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ZYDUSLIFE,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ZYDUSLIFE,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ZYDUSLIFE,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ZYDUSLIFE,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ZYDUSLIFE,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ZYDUSLIFE,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ZYDUSLIFE,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ZYDUSLIFE,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ZYDUSLIFE,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,documents,ZYDUSLIFE,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,prosandcons,WIPRO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-03,prosandcons,WIPRO,,company_id,orphan company_id not present in companies,CRITICAL
+DQ-05,profitandloss,ADANIENSOL,2024-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,AXISBANK,2013-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,AXISBANK,2014-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,AXISBANK,2015-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,AXISBANK,2016-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,AXISBANK,2017-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,AXISBANK,2018-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,AXISBANK,2019-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,AXISBANK,2020-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,AXISBANK,2021-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,AXISBANK,2022-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,AXISBANK,2023-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,AXISBANK,2024-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,AXISBANK,PARSE_ERROR,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,BAJFINANCE,2015-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,BAJFINANCE,2016-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,BAJFINANCE,2017-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,BAJFINANCE,2018-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,BAJFINANCE,2019-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,BAJFINANCE,2020-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,BAJFINANCE,2021-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,BAJFINANCE,2022-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,BAJFINANCE,2023-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,BAJFINANCE,2024-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,BAJFINANCE,PARSE_ERROR,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,BANKBARODA,2013-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,BANKBARODA,2014-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,BANKBARODA,2015-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,BANKBARODA,2016-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,BANKBARODA,2017-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,BANKBARODA,2018-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,BANKBARODA,2019-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,BANKBARODA,2020-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,BANKBARODA,2021-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,BANKBARODA,2022-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,BANKBARODA,2023-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,BANKBARODA,2024-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,BANKBARODA,PARSE_ERROR,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,CANBK,2013-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,CANBK,2014-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,CANBK,2015-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,CANBK,2016-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,CANBK,2017-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,CANBK,2018-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,CANBK,2019-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,CANBK,2020-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,CANBK,2021-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,CANBK,2022-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,CANBK,2023-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,CANBK,2024-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,CANBK,PARSE_ERROR,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,CHOLAFIN,2013-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,CHOLAFIN,2014-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,CHOLAFIN,2015-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,CHOLAFIN,2016-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,CHOLAFIN,2017-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,CHOLAFIN,2018-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,CHOLAFIN,2019-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,CHOLAFIN,2020-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,CHOLAFIN,2021-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,CHOLAFIN,2022-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,CHOLAFIN,2023-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,CHOLAFIN,2024-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,CHOLAFIN,PARSE_ERROR,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,CIPLA,2013-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,CIPLA,2014-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,CIPLA,2015-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,CIPLA,2016-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,CIPLA,2017-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,CIPLA,2018-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,CIPLA,2019-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,CIPLA,2020-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,CIPLA,2021-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,CIPLA,2022-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,CIPLA,2023-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,CIPLA,2024-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,CIPLA,PARSE_ERROR,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,COALINDIA,2013-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,COALINDIA,2014-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,COALINDIA,2015-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,COALINDIA,2016-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,COALINDIA,2017-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,COALINDIA,2018-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,COALINDIA,2019-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,COALINDIA,2020-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,COALINDIA,2021-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,COALINDIA,2022-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,COALINDIA,2023-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,COALINDIA,2024-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,COALINDIA,PARSE_ERROR,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HDFCBANK,2013-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HDFCBANK,2014-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HDFCBANK,2015-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HDFCBANK,2016-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HDFCBANK,2017-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HDFCBANK,2018-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HDFCBANK,2019-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HDFCBANK,2020-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HDFCBANK,2021-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HDFCBANK,2022-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HDFCBANK,2023-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HDFCBANK,2024-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HDFCBANK,PARSE_ERROR,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HDFCLIFE,2013-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HDFCLIFE,2014-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HDFCLIFE,2015-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HDFCLIFE,2016-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HDFCLIFE,2017-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HDFCLIFE,2018-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HDFCLIFE,2019-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HDFCLIFE,2020-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HDFCLIFE,2021-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HDFCLIFE,2022-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HDFCLIFE,2023-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HDFCLIFE,2024-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HDFCLIFE,PARSE_ERROR,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HEROMOTOCO,2014-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HEROMOTOCO,2015-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HEROMOTOCO,2016-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HEROMOTOCO,2017-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HEROMOTOCO,2018-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HEROMOTOCO,2019-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HEROMOTOCO,2020-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HEROMOTOCO,2021-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HEROMOTOCO,2022-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HEROMOTOCO,2023-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HEROMOTOCO,2024-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HEROMOTOCO,PARSE_ERROR,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HINDALCO,2013-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HINDALCO,2014-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HINDALCO,2015-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HINDALCO,2016-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HINDALCO,2017-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HINDALCO,2018-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HINDALCO,2019-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HINDALCO,2020-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HINDALCO,2021-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HINDALCO,2022-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HINDALCO,2023-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HINDALCO,2024-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HINDALCO,PARSE_ERROR,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HINDUNILVR,2013-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HINDUNILVR,2014-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HINDUNILVR,2015-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HINDUNILVR,2016-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HINDUNILVR,2017-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HINDUNILVR,2018-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HINDUNILVR,2019-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HINDUNILVR,2020-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HINDUNILVR,2021-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HINDUNILVR,2022-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HINDUNILVR,2023-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HINDUNILVR,2024-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,HINDUNILVR,PARSE_ERROR,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,ICICIBANK,2013-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,ICICIBANK,2014-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,ICICIBANK,2015-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,ICICIBANK,2016-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,ICICIBANK,2017-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,ICICIBANK,2018-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,ICICIBANK,2019-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,ICICIBANK,2020-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,ICICIBANK,2021-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,ICICIBANK,2022-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,ICICIBANK,2023-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,ICICIBANK,2024-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,ICICIBANK,PARSE_ERROR,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,ICICIGI,2013-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,ICICIGI,2014-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,ICICIGI,2015-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,ICICIGI,2016-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,ICICIGI,2017-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,ICICIGI,2018-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,ICICIGI,2019-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,ICICIGI,2020-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,ICICIGI,2021-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,ICICIGI,2022-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,ICICIGI,2023-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,ICICIGI,2024-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,ICICIGI,PARSE_ERROR,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,ICICIPRULI,2013-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,ICICIPRULI,2014-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,ICICIPRULI,2015-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,ICICIPRULI,2016-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,ICICIPRULI,2017-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,ICICIPRULI,2018-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,ICICIPRULI,2019-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,ICICIPRULI,2020-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,ICICIPRULI,2021-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,ICICIPRULI,2022-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,ICICIPRULI,2023-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,ICICIPRULI,2024-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,ICICIPRULI,PARSE_ERROR,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,INDUSINDBK,2013-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,INDUSINDBK,2014-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,INDUSINDBK,2015-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,INDUSINDBK,2016-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,INDUSINDBK,2017-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,INDUSINDBK,2018-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,INDUSINDBK,2019-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,INDUSINDBK,2020-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,INDUSINDBK,2021-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,INDUSINDBK,2022-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,INDUSINDBK,2023-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,INDUSINDBK,2024-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,INDUSINDBK,PARSE_ERROR,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,JIOFIN,2023-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,KOTAKBANK,2013-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,KOTAKBANK,2014-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,KOTAKBANK,2015-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,KOTAKBANK,2016-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,KOTAKBANK,2017-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,KOTAKBANK,2018-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,KOTAKBANK,2019-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,KOTAKBANK,2020-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,KOTAKBANK,2021-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,KOTAKBANK,2022-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,KOTAKBANK,2023-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,KOTAKBANK,2024-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,KOTAKBANK,PARSE_ERROR,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,SUNPHARMA,2024-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,INDIGO,2013-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,INDIGO,2014-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,INDIGO,2015-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,INDIGO,2016-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,INDIGO,2017-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,INDIGO,2018-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,INDIGO,2019-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,INDIGO,2020-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,INDIGO,2021-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,INDIGO,2022-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,INDIGO,2023-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,INDIGO,2024-03,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-05,profitandloss,INDIGO,PARSE_ERROR,opm_percentage,reported OPM diverges from computed OPM by >= 1 point,WARNING
+DQ-06,profitandloss,ADANIENSOL,2014-03,sales,non-positive sales for non-financial company,WARNING
+DQ-07,profitandloss,ABB,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,ADANIENSOL,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,ADANIENT,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,ADANIGREEN,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,ADANIPORTS,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,ADANIPORTS,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,ADANIPOWER,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,AMBUJACEM,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,AMBUJACEM,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,APOLLOHOSP,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,ASIANPAINT,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,ATGL,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,BAJAJ-AUTO,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,AXISBANK,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,BAJAJFINSV,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,BAJAJHLDNG,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,BAJFINANCE,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,BANKBARODA,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,BHARTIARTL,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,BEL,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,BHEL,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,BOSCHLTD,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,BPCL,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,BRITANNIA,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,CANBK,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,CHOLAFIN,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,CIPLA,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,COALINDIA,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,DABUR,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,DIVISLAB,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,DLF,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,DMART,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,DRREDDY,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,EICHERMOT,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,GAIL,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,GODREJCP,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,GRASIM,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,HAL,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,HAVELLS,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,HCLTECH,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,HCLTECH,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,HDFCBANK,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,HDFCLIFE,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,HEROMOTOCO,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,HINDALCO,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,HINDUNILVR,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,ICICIBANK,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,ICICIGI,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,ICICIPRULI,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,INDUSINDBK,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,INFY,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,IOC,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,IRCTC,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,IRFC,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,ITC,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,JINDALSTEL,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,JIOFIN,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,JSWENERGY,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,JSWSTEEL,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,KOTAKBANK,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,LICI,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,LODHA,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,LT,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,LTIM,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,M&M,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,MARUTI,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,MOTHERSON,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,NAUKRI,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,NESTLEIND,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,NHPC,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,NTPC,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,ONGC,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,PFC,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,PIDILITIND,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,PNB,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,POWERGRID,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,RECLTD,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,RELIANCE,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,SBILIFE,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,SBIN,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,SHREECEM,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,SHREECEM,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,SHRIRAMFIN,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,SUNPHARMA,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,TATACONSUM,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,TATAMOTORS,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,TATAPOWER,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,TATASTEEL,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,TCS,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,TECHM,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,TITAN,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,TORNTPHARM,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,TRENT,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,TVSMOTOR,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,ULTRACEMCO,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,UNIONBANK,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,UNITDSPR,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,VBL,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,VEDL,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,WIPRO,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,ZOMATO,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,ZYDUSLIFE,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,profitandloss,INDIGO,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,balancesheet,ZYDUSLIFE,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,balancesheet,ZOMATO,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,balancesheet,WIPRO,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,balancesheet,VEDL,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-07,balancesheet,UNITDSPR,PARSE_ERROR,year,year label failed normalisation,CRITICAL
+DQ-09,cashflow,TVSMOTOR,2022-03,net_cash_flow,net cash flow differs from component sum beyond 10 Cr,WARNING
+DQ-11,profitandloss,ADANIENT,2014-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,ADANIGREEN,2017-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,ADANIGREEN,2018-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,ADANIGREEN,2019-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,ADANIPOWER,2014-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,ADANIPOWER,2016-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,ADANIPOWER,2017-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,ADANIPOWER,2023-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,AMBUJACEM,2018-12,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,APOLLOHOSP,2018-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,AXISBANK,2018-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,AXISBANK,2020-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,BANKBARODA,2016-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,BANKBARODA,2018-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,BANKBARODA,2020-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,BANKBARODA,2021-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,BHARTIARTL,2014-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,BHARTIARTL,2019-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,BHARTIARTL,2020-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,BHARTIARTL,2021-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,BHEL,2016-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,BHEL,2018-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,BHEL,2020-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,BHEL,2021-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,BHEL,2024-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,CANBK,2016-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,CANBK,2018-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,CANBK,2019-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,DLF,2014-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,DLF,2020-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,DRREDDY,2020-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,GODREJCP,2019-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,GODREJCP,2024-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,GRASIM,2020-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,HDFCLIFE,2024-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,HINDALCO,2015-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,HINDALCO,2016-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,IOC,2020-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,IRFC,2013-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,JINDALSTEL,2015-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,JINDALSTEL,2016-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,JINDALSTEL,2017-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,JINDALSTEL,2018-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,JINDALSTEL,2019-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,JSWENERGY,2018-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,JSWSTEEL,2014-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,JSWSTEEL,2016-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,JSWSTEEL,2020-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,LICI,2019-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,LICI,2020-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,LICI,2021-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,LICI,2022-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,LODHA,2021-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,LODHA,2023-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,M&M,2020-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,MOTHERSON,2020-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,NAUKRI,2015-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,NAUKRI,2017-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,NAUKRI,2020-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,NAUKRI,2023-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,NHPC,2020-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,NHPC,2022-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,NTPC,2016-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,NTPC,2019-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,PNB,2016-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,PNB,2018-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,PNB,2019-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,POWERGRID,2019-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,SBIN,2017-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,SBIN,2018-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,SHREECEM,2015-06,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,TATACONSUM,2016-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,TATAMOTORS,2019-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,TATAMOTORS,2024-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,TATAPOWER,2013-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,TATAPOWER,2014-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,TATAPOWER,2015-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,TATASTEEL,2013-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,TATASTEEL,2015-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,TATASTEEL,2016-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,TATASTEEL,2017-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,TATASTEEL,2020-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,TATASTEEL,2024-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,TRENT,2013-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,TRENT,2014-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,TRENT,2021-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,TRENT,2022-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,ULTRACEMCO,2020-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,UNIONBANK,2017-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,UNIONBANK,2018-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,UNIONBANK,2019-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,UNIONBANK,2020-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,UNIONBANK,2021-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,UNITDSPR,2013-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,UNITDSPR,2016-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,VBL,2012-12,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,VBL,2013-12,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,VBL,2014-12,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,VEDL,2013-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,VEDL,2014-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,VEDL,2016-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,VEDL,2020-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,VEDL,2024-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,ZOMATO,2023-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,ZOMATO,2024-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,INDIGO,2019-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,INDIGO,2020-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-11,profitandloss,INDIGO,2024-03,tax_percentage,effective tax rate outside 0-60 percent range,WARNING
+DQ-12,profitandloss,BHARTIARTL,2019-03,dividend_payout,dividend payout above 200 percent cap,WARNING
+DQ-12,profitandloss,BRITANNIA,2021-03,dividend_payout,dividend payout above 200 percent cap,WARNING
+DQ-12,profitandloss,M&M,2020-03,dividend_payout,dividend payout above 200 percent cap,WARNING
+DQ-12,profitandloss,SBIN,2017-03,dividend_payout,dividend payout above 200 percent cap,WARNING
+DQ-12,profitandloss,TATAPOWER,2015-03,dividend_payout,dividend payout above 200 percent cap,WARNING
+DQ-12,profitandloss,VEDL,2023-03,dividend_payout,dividend payout above 200 percent cap,WARNING
+DQ-12,profitandloss,VEDL,2024-03,dividend_payout,dividend payout above 200 percent cap,WARNING
+DQ-14,profitandloss,JIOFIN,2023-03,eps,EPS not positive while net profit is positive,WARNING
+DQ-14,profitandloss,JSWENERGY,2018-03,eps,EPS not positive while net profit is positive,WARNING
+DQ-14,profitandloss,LICI,2019-03,eps,EPS not positive while net profit is positive,WARNING
+DQ-14,profitandloss,LICI,2020-03,eps,EPS not positive while net profit is positive,WARNING
+DQ-14,profitandloss,LICI,PARSE_ERROR,eps,EPS not positive while net profit is positive,WARNING
+DQ-14,profitandloss,SIEMENS,2011-09,eps,EPS not positive while net profit is positive,WARNING
+DQ-14,profitandloss,TATAPOWER,2013-03,eps,EPS not positive while net profit is positive,WARNING
+DQ-14,profitandloss,TATAPOWER,2014-03,eps,EPS not positive while net profit is positive,WARNING
+DQ-14,profitandloss,VBL,2016-12,eps,EPS not positive while net profit is positive,WARNING
+DQ-14,profitandloss,ZOMATO,2024-03,eps,EPS not positive while net profit is positive,WARNING
+DQ-16,profitandloss,JIOFIN,,year,"only 2 years of history, below 5",WARNING
+DQ-16,balancesheet,JIOFIN,,year,"only 3 years of history, below 5",WARNING
+DQ-16,cashflow,JIOFIN,,year,"only 2 years of history, below 5",WARNING

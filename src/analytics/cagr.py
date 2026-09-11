@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import logging
-from typing import Optional
 
 import pandas as pd
 
@@ -27,10 +26,10 @@ def cagr_windows() -> tuple[int, ...]:
 
 
 def compute_cagr(
-    start_value: Optional[float],
-    end_value: Optional[float],
+    start_value: float | None,
+    end_value: float | None,
     years: int,
-) -> tuple[Optional[float], str]:
+) -> tuple[float | None, str]:
     """Return CAGR in percent with an edge-case flag for a start/end pair."""
     if start_value is None or end_value is None or years <= 0:
         return None, INSUFFICIENT
@@ -53,7 +52,7 @@ def cagr_ending_at(
     series: pd.Series,
     end_label: str,
     years: int,
-) -> tuple[Optional[float], str]:
+) -> tuple[float | None, str]:
     """Return CAGR and flag for a calendar window ending at a year label."""
     if end_label not in series.index:
         return None, INSUFFICIENT
@@ -63,7 +62,7 @@ def cagr_ending_at(
     return compute_cagr(series.loc[start_label], series.loc[end_label], years)
 
 
-def cagr_from_series(series: pd.Series, years: int) -> tuple[Optional[float], str]:
+def cagr_from_series(series: pd.Series, years: int) -> tuple[float | None, str]:
     """Return CAGR and flag for a window ending at the latest year of a series."""
     ordered = series.dropna().sort_index()
     if ordered.empty:
@@ -84,9 +83,7 @@ def compute_cagr_ratios(profit_and_loss: pd.DataFrame) -> pd.DataFrame:
             row: dict = {"company_id": company_id, "year": year}
             for metric, _ in CAGR_METRICS:
                 for window in windows:
-                    value, flag = cagr_ending_at(
-                        series_by_metric[metric], year, window
-                    )
+                    value, flag = cagr_ending_at(series_by_metric[metric], year, window)
                     row[f"{metric}_cagr_{window}yr"] = value
                     row[f"{metric}_cagr_{window}yr_flag"] = flag
             rows.append(row)

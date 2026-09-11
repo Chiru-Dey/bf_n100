@@ -99,9 +99,7 @@ def cross_validate_cagr(
         company = pl[pl["company_id"] == ticker]
         if company.empty:
             continue
-        series = (
-            company.set_index("year")[SERIES_COLUMNS[metric]].dropna().sort_index()
-        )
+        series = company.set_index("year")[SERIES_COLUMNS[metric]].dropna().sort_index()
         if series.empty:
             continue
         end_label = str(series.index[-1])

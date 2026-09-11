@@ -90,6 +90,22 @@ LOAD_ORDER = (
     "market_cap",
 )
 
+# Delete in reverse order (children first) to respect FK constraints
+DELETE_ORDER = [
+    "peer_groups",
+    "financial_ratios",
+    "stock_prices",
+    "market_cap",
+    "sectors",
+    "prosandcons",
+    "documents",
+    "analysis",
+    "cashflow",
+    "balancesheet",
+    "profitandloss",
+    "companies",
+]
+
 AUDIT_COLUMNS = (
     "source_file",
     "table",
@@ -409,37 +425,48 @@ def _native(value: object) -> object:
 
 def write_table(conn: sqlite3.Connection, table: str, df: pd.DataFrame) -> int:
     """Replace table rows with DataFrame contents and return row count."""
-    columns = TABLE_COLUMNS[table]
+    clean_table = table.strip()
+    col_key = next((k for k in TABLE_COLUMNS if k.strip() == clean_table), clean_table)
+    columns = [c.strip() for c in TABLE_COLUMNS.get(col_key, [])]
+    if not columns:
+        return 0
     frame = df.reindex(columns=list(columns))
     column_clause = ", ".join(columns)
     placeholders = ", ".join(["?"] * len(columns))
-    sql = f"INSERT INTO {table} ({column_clause}) VALUES ({placeholders})"
+    sql = f"INSERT INTO {clean_table} ({column_clause}) VALUES ({placeholders})"
     rows = [
         tuple(_native(value) for value in record)
         for record in frame.itertuples(index=False, name=None)
     ]
     with conn:
-        conn.execute(f"DELETE FROM {table}")
+        conn.execute(f"DELETE FROM {clean_table}")
         conn.executemany(sql, rows)
     return len(rows)
-
 
 def load_database(tables: dict[str, pd.DataFrame]) -> dict[str, int]:
     """Full-refresh tables in dependency order and return row counts."""
     conn = connect_db()
     try:
         init_schema(conn)
+        existing = {
+            r[0] for r in conn.execute("SELECT name FROM sqlite_master WHERE type='table'").fetchall()
+        }
         with conn:
-            for name in reversed(LOAD_ORDER):
-                conn.execute(f"DELETE FROM {name}")
+            for name in DELETE_ORDER:
+                clean_name = name.strip()
+                if clean_name in existing:
+                    conn.execute(f"DELETE FROM {clean_name}")
         counts = {}
         for name in LOAD_ORDER:
-            if name in tables:
-                counts[name] = write_table(conn, name, tables[name])
+            clean_name = name.strip()
+            if clean_name not in existing:
+                continue
+            table_key = next((k for k in tables if k.strip() == clean_name), None)
+            if table_key:
+                counts[clean_name] = write_table(conn, clean_name, tables[table_key])
         return counts
     finally:
         conn.close()
-
 
 def check_foreign_keys() -> list[tuple]:
     """Return PRAGMA foreign_key_check violations for the project database."""

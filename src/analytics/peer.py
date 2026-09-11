@@ -88,9 +88,9 @@ def load_peer_groups(path: Path = PEER_GROUPS_PATH) -> pd.DataFrame:
     )
     result = result[~result["company_id"].str.upper().isin(NULL_LABELS)]
     if result["company_id"].str.contains(",").any():
-        result = result.assign(
-            company_id=result["company_id"].str.split(",")
-        ).explode("company_id")
+        result = result.assign(company_id=result["company_id"].str.split(",")).explode(
+            "company_id"
+        )
         result["company_id"] = result["company_id"].str.strip()
     result["company_id"] = result["company_id"].str.upper()
     bench = result["benchmark_label"].str.upper()
@@ -102,9 +102,7 @@ def load_peer_groups(path: Path = PEER_GROUPS_PATH) -> pd.DataFrame:
     )
 
 
-def _resolve_peer_company_ids(
-    peer_groups: pd.DataFrame, db_path: Path
-) -> pd.DataFrame:
+def _resolve_peer_company_ids(peer_groups: pd.DataFrame, db_path: Path) -> pd.DataFrame:
     """Map peer member labels to tickers, falling back to company-name matching."""
     with sqlite3.connect(db_path) as conn:
         companies = pd.read_sql_query("SELECT id, company_name FROM companies", conn)
@@ -114,8 +112,8 @@ def _resolve_peer_company_ids(
         companies["company_name"].astype(str).str.strip().str.upper()
     )["id"]
     resolved = peer_groups.copy()
-    resolved["company_id"] = resolved["company_id"].map(name_map).fillna(
-        resolved["company_id"]
+    resolved["company_id"] = (
+        resolved["company_id"].map(name_map).fillna(resolved["company_id"])
     )
     logger.warning("Peer member labels resolved via company_name mapping")
     return resolved
@@ -130,6 +128,7 @@ def compute_percent_rank(series: pd.Series, ascending: bool = True) -> pd.Series
     if count == 1:
         return pd.Series(1.0, index=series.index)
     return (ranks - 1) / (count - 1)
+
 
 def build_peer_percentiles(db_path: Path = DB_PATH) -> pd.DataFrame:
     """Compute percentile ranks for all metrics across all peer groups."""
@@ -149,7 +148,7 @@ def build_peer_percentiles(db_path: Path = DB_PATH) -> pd.DataFrame:
             .groupby("company_id")
             .tail(1)
         )
-        latest_ratios = pd.concat([latest_ratios, fallback])    
+        latest_ratios = pd.concat([latest_ratios, fallback])
         merged = peer_groups.merge(latest_ratios, on="company_id", how="inner")
     merged = merged.merge(
         companies.rename(columns={"id": "company_id"}), on="company_id", how="left"
@@ -179,9 +178,9 @@ def build_peer_percentiles(db_path: Path = DB_PATH) -> pd.DataFrame:
                         "peer_group_name": group_name,
                         "metric": metric,
                         "value": row_data[metric],
-                        "percentile_rank": round(float(pct), 4)
-                        if pd.notna(pct)
-                        else None,
+                        "percentile_rank": (
+                            round(float(pct), 4) if pd.notna(pct) else None
+                        ),
                         "year": row_data["year"],
                         "is_benchmark": int(bool(row_data.get("is_benchmark", False))),
                     }

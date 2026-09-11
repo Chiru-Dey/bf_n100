@@ -5,7 +5,6 @@ from __future__ import annotations
 import logging
 import sqlite3
 from pathlib import Path
-from typing import Optional
 
 import matplotlib
 
@@ -70,7 +69,7 @@ BULLET_CON = ParagraphStyle(
 SECTION = ParagraphStyle("Section", parent=_styles["Heading2"], fontSize=12)
 
 
-def _fmt(value: Optional[float], suffix: str = "%", precision: int = 1) -> str:
+def _fmt(value: float | None, suffix: str = "%", precision: int = 1) -> str:
     """Format a numeric KPI for display, returning N/A when missing."""
     if value is None or pd.isna(value):
         return "N/A"
@@ -117,12 +116,20 @@ def fetch_tearsheet_data(ticker: str, db_path: Path = DB_PATH) -> dict:
             conn,
             params=(ticker,),
         )
-    return {"company": company, "sector": sector, "ratios": ratios, "pl": pl, "bs": bs, "cf": cf}
+    return {
+        "company": company,
+        "sector": sector,
+        "ratios": ratios,
+        "pl": pl,
+        "bs": bs,
+        "cf": cf,
+    }
 
 
 def build_kpi_tiles(ratios: pd.DataFrame) -> list[tuple[str, str]]:
     """Return six latest-year KPI label/value pairs for the tile grid."""
-    def get(key: str) -> Optional[float]:
+
+    def get(key: str) -> float | None:
         if ratios.empty:
             return None
         return ratios.tail(1).iloc[0].get(key)
@@ -164,8 +171,20 @@ def chart_revenue_profit(pl: pd.DataFrame, path: Path) -> Path:
     fig, ax = plt.subplots(figsize=(7.4, 3.0), dpi=110)
     positions = list(range(len(data)))
     width = 0.4
-    ax.bar([i - width / 2 for i in positions], data["sales"], width, label="Sales", color="#1F3864")
-    ax.bar([i + width / 2 for i in positions], data["net_profit"], width, label="Net Profit", color="#4472C4")
+    ax.bar(
+        [i - width / 2 for i in positions],
+        data["sales"],
+        width,
+        label="Sales",
+        color="#1F3864",
+    )
+    ax.bar(
+        [i + width / 2 for i in positions],
+        data["net_profit"],
+        width,
+        label="Net Profit",
+        color="#4472C4",
+    )
     ax.set_xticks(positions)
     ax.set_xticklabels(data["year"].str[:4], fontsize=7, rotation=45)
     ax.set_title("Revenue vs Net Profit (Cr)", fontsize=9)
@@ -183,10 +202,18 @@ def chart_returns(ratios: pd.DataFrame, path: Path) -> Path:
     data = ratios.tail(10)
     fig, ax1 = plt.subplots(figsize=(7.4, 3.0), dpi=110)
     years = data["year"].str[:4]
-    ax1.plot(years, data["return_on_equity_pct"], marker="o", color="#1F3864", label="ROE")
+    ax1.plot(
+        years, data["return_on_equity_pct"], marker="o", color="#1F3864", label="ROE"
+    )
     ax1.set_ylabel("ROE %", fontsize=8)
     ax2 = ax1.twinx()
-    ax2.plot(years, data["return_on_capital_employed_pct"], marker="s", color="#ED7D31", label="ROCE")
+    ax2.plot(
+        years,
+        data["return_on_capital_employed_pct"],
+        marker="s",
+        color="#ED7D31",
+        label="ROCE",
+    )
     ax2.set_ylabel("ROCE %", fontsize=8)
     ax1.tick_params(labelsize=7)
     ax2.tick_params(labelsize=7)
@@ -212,7 +239,13 @@ def chart_bs_composition(bs: pd.DataFrame, path: Path) -> Path:
     years = data["year"].str[:4]
     ax.bar(years, equity, label="Equity", color="#2E7D32")
     ax.bar(years, borrowings, bottom=equity, label="Borrowings", color="#C62828")
-    ax.bar(years, other, bottom=equity + borrowings, label="Other Liabilities", color="#9E9E9E")
+    ax.bar(
+        years,
+        other,
+        bottom=equity + borrowings,
+        label="Other Liabilities",
+        color="#9E9E9E",
+    )
     ax.set_title("Balance Sheet Composition (Cr)", fontsize=9)
     ax.legend(fontsize=7)
     ax.tick_params(labelsize=7)
@@ -235,8 +268,13 @@ def chart_cf_waterfall(cf: pd.DataFrame, path: Path) -> Path:
     fig, ax = plt.subplots(figsize=(7.4, 3.0), dpi=110)
     cumulative = 0.0
     for index, value in enumerate(steps):
-        ax.bar(index, value, bottom=cumulative, width=0.6,
-               color="#2E7D32" if value >= 0 else "#C62828")
+        ax.bar(
+            index,
+            value,
+            bottom=cumulative,
+            width=0.6,
+            color="#2E7D32" if value >= 0 else "#C62828",
+        )
         cumulative += value
     ax.bar(3, cumulative, width=0.6, color="#1F3864")
     ax.set_xticks([0, 1, 2, 3])
@@ -287,7 +325,12 @@ def generate_tearsheet(ticker: str, output_dir: Path = OUTPUT_DIR) -> Path:
 
     story = []
     header = Table(
-        [[Paragraph(f"{name} ({ticker})", TITLE_STYLE), Paragraph(sector, TITLE_STYLE)]],
+        [
+            [
+                Paragraph(f"{name} ({ticker})", TITLE_STYLE),
+                Paragraph(sector, TITLE_STYLE),
+            ]
+        ],
         colWidths=[USABLE_WIDTH * 0.7, USABLE_WIDTH * 0.3],
     )
     header.setStyle(
@@ -351,7 +394,14 @@ def generate_tearsheet(ticker: str, output_dir: Path = OUTPUT_DIR) -> Path:
     story.append(Spacer(1, 0.3 * cm))
 
     badge = Table(
-        [[Paragraph(f"Capital Allocation: {latest_pattern(data['cf'], data['pl'])}", TILE_VALUE)]],
+        [
+            [
+                Paragraph(
+                    f"Capital Allocation: {latest_pattern(data['cf'], data['pl'])}",
+                    TILE_VALUE,
+                )
+            ]
+        ],
         colWidths=[USABLE_WIDTH],
     )
     badge.setStyle(

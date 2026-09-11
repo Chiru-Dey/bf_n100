@@ -21,14 +21,28 @@ DEFAULTS = {
 PRESETS = {
     "Quality": dict(DEFAULTS),
     "Value": {
-        "roe_min": 0.0, "de_max": 2.0, "fcf_min": 0.0, "rev_cagr_min": 0.0,
-        "pat_cagr_min": 0.0, "opm_min": 0.0, "pe_max": 25.0, "pb_max": 6.0,
-        "div_yield_min": 1.0, "icr_min": 0.0,
+        "roe_min": 0.0,
+        "de_max": 2.0,
+        "fcf_min": 0.0,
+        "rev_cagr_min": 0.0,
+        "pat_cagr_min": 0.0,
+        "opm_min": 0.0,
+        "pe_max": 25.0,
+        "pb_max": 6.0,
+        "div_yield_min": 1.0,
+        "icr_min": 0.0,
     },
     "Growth": {
-        "roe_min": 0.0, "de_max": 2.0, "fcf_min": 0.0, "rev_cagr_min": 15.0,
-        "pat_cagr_min": 20.0, "opm_min": 0.0, "pe_max": 100.0, "pb_max": 20.0,
-        "div_yield_min": 0.0, "icr_min": 0.0,
+        "roe_min": 0.0,
+        "de_max": 2.0,
+        "fcf_min": 0.0,
+        "rev_cagr_min": 15.0,
+        "pat_cagr_min": 20.0,
+        "opm_min": 0.0,
+        "pe_max": 100.0,
+        "pb_max": 20.0,
+        "div_yield_min": 0.0,
+        "icr_min": 0.0,
     },
 }
 
@@ -82,9 +96,16 @@ results = apply_filters(universe, filters)
 st.subheader(f"{len(results)} companies match your filters")
 
 cols = [
-    "company_id", "broad_sector", "composite_quality_score", "return_on_equity_pct",
-    "debt_to_equity", "free_cash_flow_cr", "revenue_cagr_5yr", "pe_ratio",
-    "pb_ratio", "dividend_yield_pct",
+    "company_id",
+    "broad_sector",
+    "composite_quality_score",
+    "return_on_equity_pct",
+    "debt_to_equity",
+    "free_cash_flow_cr",
+    "revenue_cagr_5yr",
+    "pe_ratio",
+    "pb_ratio",
+    "dividend_yield_pct",
 ]
 display_cols = [c for c in cols if c in results.columns]
 
